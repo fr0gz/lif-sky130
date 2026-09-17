@@ -1,0 +1,154 @@
+* ============================================================
+* SKY130 LIF - Minimal LIF with idealized spike/reset control
+* ============================================================
+
+.title SKY130 LIF - Minimal LIF Spike Reset
+
+.lib /tmp/sky130_continuous_test/sky130_tt.lib.spice tt
+
+* ------------------------------------------------------------
+* Parameters
+* ------------------------------------------------------------
+
+.param VDD    = 1.8
+.param VMEM0  = 0
+
+.param CMEM   = 1p
+
+.param LLEAK  = 20
+.param WLEAK  = 7
+
+.param VBIAS  = 0.34
+.param IIN = 10n
+
+.param VTH    = 0.60
+.param VRESET = 0
+
+.param TRESET = 100n
+
+.param TSTOP  = 500u
+.param TSTEP  = 1n
+
+* ------------------------------------------------------------
+* Supply
+* ------------------------------------------------------------
+
+Vdd vdd 0 {VDD}
+
+* ------------------------------------------------------------
+* Membrane
+* ------------------------------------------------------------
+
+Cmem vmem 0 {CMEM}
+
+.ic v(vmem)={VMEM0}
+
+* ------------------------------------------------------------
+* Input current
+* ------------------------------------------------------------
+
+Iin 0 vmem DC {IIN}
+
+* ------------------------------------------------------------
+* Leakage
+* ------------------------------------------------------------
+
+Vbias bias 0 {VBIAS}
+
+Xleak vmem bias 0 0 sky130_fd_pr__nfet_01v8 l={LLEAK} w={WLEAK}
+
+
+* ------------------------------------------------------------
+* Behavioral spike / reset pulse experiment esta wea reemplaza los con B
+*
+* Test condition:
+*   IIN = 7 nA
+*   Vmem crosses VTH ≈ 0.60 V at ≈ 103.965 us.
+*
+* The spike and reset are ideal 1.8 V pulses triggered at
+* the measured threshold-crossing time.
+*
+* Pulse parameters:
+*   Delay       = 103.965 us
+*   Rise time   = 1 ns
+*   Fall time   = 1 ns
+*   Pulse width = 10 ns
+*
+* This is ONLY a behavioral reference model.
+* It is not the final CMOS implementation.
+* ------------------------------------------------------------
+
+Vspike spike 0 PULSE(0 1.8 68.999260u 1n 1n 10n 200u)
+
+Vreset reset 0 PULSE(0 1.8 68.999260u 1n 1n 10n 200u)
+
+
+
+
+* ------------------------------------------------------------
+* Spike detector - behavioral prototype
+* Spike = 1.8 V cuando Vmem supera VTH
+* ------------------------------------------------------------
+
+*Bspike spike 0 V = { V(vmem) > 0.60 ? 1.8 : 0 }
+
+* ------------------------------------------------------------
+* Reset control - behavioral prototype
+* Reset = 1.8 V cuando Vmem supera VTH
+* ------------------------------------------------------------
+
+*Breset reset 0 V = { V(vmem) > 0.60 ? 1.8 : 0 }
+
+* ------------------------------------------------------------
+* Reset switch
+* ------------------------------------------------------------
+
+Sreset vmem reset 0 0 SWRESET
+
+.model SWRESET SW(Ron=10 Roff=1G Vt=0.3 Vh=0)
+
+* ------------------------------------------------------------
+* Ideal reset control
+*
+* Reset is initially implemented as a voltage source
+* controlled by a PULSE. This is NOT the final circuit.
+* It is only a behavioral test of the reset mechanism.
+* ------------------------------------------------------------
+
+*Vreset reset 0 PULSE(0 1.8 68.999260u 1n 1n 10n 200u)
+
+* ------------------------------------------------------------
+* Ideal spike control
+*
+* Behavioral test only.
+* Spike occurs when membrane reaches VTH.
+* ------------------------------------------------------------
+
+*Bspike spike 0 V = {VTH + 1.2*(v(vmem) > VTH)}
+
+*Vspike spike 0 PULSE(0 1.8 68.999260u 1n 1n 10n 200u)
+
+
+* ------------------------------------------------------------
+* Transient
+* ------------------------------------------------------------
+
+.control
+
+tran 1n 500u
+
+meas tran t_cross WHEN v(vmem)=0.60 RISE=1
+meas tran vmax MAX v(vmem)
+
+set wr_vecnames
+set filetype=ascii
+print time v(vmem) v(reset) v(spike) > lif_reset_10nA.dat
+
+print t_cross
+print vmax
+
+.endc
+
+
+.end
+

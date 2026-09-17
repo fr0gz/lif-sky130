@@ -1,0 +1,27 @@
+* ============================================================
+* SKY130 LIF - Leakage Characterization
+* ============================================================
+
+.title SKY130 LIF Leakage Characterization
+
+.lib /tmp/sky130_continuous_test/sky130_tt.lib.spice tt
+
+.param VDD  = 1.8
+.param VMEM = 1.0
+
+Vdd   vdd   0 {VDD}
+Vbias bias  0 0.4
+Vmem  vmem  0 {VMEM}
+
+Xleak vmem bias 0 0 sky130_fd_pr__nfet_01v8 l=20 w=7
+
+.control
+  dc Vbias 0.2 0.6 0.01
+  set filetype=ascii
+  print dc i(Vmem)
+  write leakage_dc.raw v(vmem) v(bias) i(Vmem)
+  quit
+.endc
+
+.end
+

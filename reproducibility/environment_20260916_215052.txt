@@ -1,0 +1,2321 @@
+LIF-SKY130 REPRODUCIBILITY ENVIRONMENT SNAPSHOT
+===============================================
+
+Project                     : lif-sky130
+Capture timestamp            : 2026-09-16T21:50:52+0200
+Project root                : /foss/designs/lif-sky130
+Expected PDK root           : /foss/pdks/sky130A
+Report                      : /foss/designs/lif-sky130/reproducibility/environment_20260916_215052.txt
+
+This report records environment information that could be
+verified at capture time.
+
+STATUS DEFINITIONS
+  VERIFIED       = directly observed
+  NOT_AVAILABLE  = information/tool unavailable
+  NOT_DEFINED    = environment variable not defined
+  NOT_FOUND      = expected path does not exist
+  DECLARED       = supplied as project configuration
+
+
+============================================================================
+1. PROJECT IDENTITY
+============================================================================
+Project name                        : lif-sky130
+Project root                        : /foss/designs/lif-sky130
+PDK expected root                   : /foss/pdks/sky130A
+Capture time                        : 2026-09-16T21:50:52+0200
+Project directory                   : VERIFIED
+
+============================================================================
+2. OPERATING SYSTEM / KERNEL / ARCHITECTURE
+============================================================================
+[/etc/os-release]
+PRETTY_NAME="Ubuntu 24.04.3 LTS"
+NAME="Ubuntu"
+VERSION_ID="24.04"
+VERSION="24.04.3 LTS (Noble Numbat)"
+VERSION_CODENAME=noble
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=noble
+LOGO=ubuntu-logo
+
+Kernel                              : Linux 5.15.167.4-microsoft-standard-WSL2 #1 SMP Tue Nov 5 00:21:55 UTC 2024
+Kernel release                      : 5.15.167.4-microsoft-standard-WSL2
+Architecture                        : x86_64
+Machine                             : x86_64
+
+--- CPU information ---
+Architecture:                         x86_64
+CPU op-mode(s):                       32-bit, 64-bit
+Address sizes:                        48 bits physical, 48 bits virtual
+Byte Order:                           Little Endian
+CPU(s):                               12
+On-line CPU(s) list:                  0-11
+Vendor ID:                            AuthenticAMD
+Model name:                           AMD Ryzen 5 7535HS with Radeon Graphics
+CPU family:                           25
+Model:                                68
+Thread(s) per core:                   2
+Core(s) per socket:                   6
+Socket(s):                            1
+Stepping:                             1
+BogoMIPS:                             6587.61
+Flags:                                fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl tsc_reliable nonstop_tsc cpuid extd_apicid pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy svm cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw topoext perfctr_core ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves clzero xsaveerptr arat npt nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold v_vmsave_vmload umip vaes vpclmulqdq rdpid fsrm
+Virtualization:                       AMD-V
+Hypervisor vendor:                    Microsoft
+Virtualization type:                  full
+L1d cache:                            192 KiB (6 instances)
+L1i cache:                            192 KiB (6 instances)
+L2 cache:                             3 MiB (6 instances)
+L3 cache:                             16 MiB (1 instance)
+Vulnerability Gather data sampling:   Not affected
+Vulnerability Itlb multihit:          Not affected
+Vulnerability L1tf:                   Not affected
+Vulnerability Mds:                    Not affected
+Vulnerability Meltdown:               Not affected
+Vulnerability Mmio stale data:        Not affected
+Vulnerability Reg file data sampling: Not affected
+Vulnerability Retbleed:               Not affected
+Vulnerability Spec rstack overflow:   Mitigation; safe RET
+Vulnerability Spec store bypass:      Mitigation; Speculative Store Bypass disabled via prctl and seccomp
+Vulnerability Spectre v1:             Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+Vulnerability Spectre v2:             Mitigation; Retpolines; IBPB conditional; IBRS_FW; STIBP always-on; RSB filling; PBRSB-eIBRS Not affected; BHI Not affected
+Vulnerability Srbds:                  Not affected
+Vulnerability Tsx async abort:        Not affected
+
+============================================================================
+3. DATE / TIME / LOCALE
+============================================================================
+Timestamp                           : 2026-09-16T21:50:52+0200
+Timezone                            : CEST (+0200)
+UTC time                            : 2026-09-16T19:50:53Z
+
+LANG=en_US.UTF-8
+LANGUAGE=
+LC_CTYPE="en_US.UTF-8"
+LC_NUMERIC="en_US.UTF-8"
+LC_TIME="en_US.UTF-8"
+LC_COLLATE="en_US.UTF-8"
+LC_MONETARY="en_US.UTF-8"
+LC_MESSAGES="en_US.UTF-8"
+LC_PAPER="en_US.UTF-8"
+LC_NAME="en_US.UTF-8"
+LC_ADDRESS="en_US.UTF-8"
+LC_TELEPHONE="en_US.UTF-8"
+LC_MEASUREMENT="en_US.UTF-8"
+LC_IDENTIFICATION="en_US.UTF-8"
+LC_ALL=en_US.UTF-8
+
+============================================================================
+4. EXECUTION ENVIRONMENT
+============================================================================
+Docker container detection          : VERIFIED
+container                           : NOT_DEFINED
+Hostname                            : 1f60eede483a
+
+============================================================================
+5. CONTAINER / IIC-OSIC-TOOLS
+============================================================================
+Docker                              : NOT_AVAILABLE
+
+============================================================================
+6. PROJECT STRUCTURE
+============================================================================
+
+--- Top-level directories ---
+Documentos/
+Gds/
+matlab/
+reproducibility/
+scripts/
+spice/
+sweep_2d/
+sweep_iin/
+sweep_threshold/
+sweep_vbias/
+xschem/
+
+--- Expected project components ---
+Documentos                          : VERIFIED
+Gds                                 : VERIFIED
+matlab                              : VERIFIED
+scripts                             : VERIFIED
+spice                               : VERIFIED
+xschem                              : VERIFIED
+
+============================================================================
+7. GIT REPOSITORY / SOURCE TRACEABILITY
+============================================================================
+git version 2.43.0
+Git repository                      : NOT_DETECTED
+
+============================================================================
+8. NGSPICE
+============================================================================
+ngspice executable                  : /foss/tools/bin/ngspice
+
+Version information:
+******
+** ngspice-45.2 : Circuit level simulation program
+** Compiled with KLU Direct Linear Solver
+** The U. C. Berkeley CAD Group
+** Copyright 1985-1994, Regents of the University of California.
+** Copyright 2001-2025, The ngspice team.
+** Please get your ngspice manual from https://ngspice.sourceforge.io/docs.html
+** Please file your bug-reports at http://ngspice.sourceforge.net/bugrep.html
+** Creation Date: Sun Dec 21 19:31:53 UTC 2025
+******
+
+Executable resolved path:
+/foss/tools/ngspice/bin/ngspice
+
+Executable SHA256:
+6b59c1507482809b8485848bd7531c2e2568907fa249a7ce937a2235073be586
+
+============================================================================
+9. XSCHEM
+============================================================================
+Xschem executable                   : /foss/tools/bin/xschem
+
+Version:
+XSCHEM V3.4.8RC
+Copyright (C) 1998-2024 Stefan Schippers
+
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Resolved path:
+/foss/tools/xschem/bin/xschem
+
+Executable SHA256:
+e8fe9f586c7ccec30943f462a81a813db361c2d7e4357259ee63c5f1c4ca2d8a
+
+============================================================================
+10. KLAYOUT
+============================================================================
+KLayout executable                  : /foss/tools/klayout/klayout
+
+KLayout 0.30.5
+
+Resolved path:
+/foss/tools/klayout/klayout
+
+Executable SHA256:
+bf54dc935788e651c7c88b21ef2ad6fb1cf58f866c7afc2d0aa1013977d707d2
+
+============================================================================
+11. ADDITIONAL EDA / ASIC TOOLS
+============================================================================
+
+[magic]
+Executable : /foss/tools/bin/magic
+application-specific initialization failed: no display name and no $DISPLAY environment variable
+Error in startup script: no display name and no $DISPLAY environment variable
+    while executing
+"load /usr/lib/x86_64-linux-gnu/libtk8.6.so"
+    ("package ifneeded Tk 8.6.14" script)
+
+[netgen]
+Executable : /foss/tools/bin/netgen
+Netgen 1.5.313 compiled on Sun Dec 21 07:48:15 PM CET 2025
+Warning: netgen command 'format' use fully-qualified name '::netgen::format'
+Warning: netgen command 'global' use fully-qualified name '::netgen::global'
+wrong # args: should be "lvs name1 name2 ?setupfile? ?logfile? ?arg ...?"
+    while executing
+
+[iverilog]
+Executable : /foss/tools/bin/iverilog
+iverilog: invalid option -- '-'
+
+[verilator]
+Executable : /foss/tools/bin/verilator
+Verilator 5.042 2025-11-02 rev v5.042
+
+[yosys]
+Executable : /foss/tools/bin/yosys
+Yosys 0.60 (git sha1 5bafeb77d, g++ 13.3.0-6ubuntu2~24.04 -fPIC -O3)
+
+[openlane]
+Executable : /usr/local/bin/openlane
+LibreLane v2.4.10
+
+Copyright ©2020-2025 Efabless Corporation, The American University in
+
+[klayout]
+Executable : /foss/tools/klayout/klayout
+Info: Could not load the Qt platform plugin "xcb" in "" even though it was found.
+Fatal: This application failed to start because no Qt platform plugin could be initialized. Reinstalling the application may fix this problem.
+
+
+[make]
+Executable : /usr/bin/make
+GNU Make 4.3
+Built for x86_64-pc-linux-gnu
+Copyright (C) 1988-2020 Free Software Foundation, Inc.
+
+[gcc]
+Executable : /usr/bin/gcc
+gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0
+Copyright (C) 2023 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+
+[g++]
+Executable : /usr/bin/g++
+g++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0
+Copyright (C) 2023 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+
+[cmake]
+Executable : /usr/bin/cmake
+cmake version 3.28.3
+
+CMake suite maintained and supported by Kitware (kitware.com/cmake).
+
+============================================================================
+12. ANALYSIS ENVIRONMENT
+============================================================================
+
+--- Python ---
+Executable:
+/usr/bin/python3
+Python 3.12.3
+
+Python path:
+/usr/bin/python3
+
+Python platform:
+Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.39
+
+Python version tuple:
+3.12.3 (main, Nov  6 2025, 13:44:16) [GCC 13.3.0]
+
+--- MATLAB ---
+MATLAB: NOT_AVAILABLE
+
+============================================================================
+13. SKY130 PDK IDENTITY
+============================================================================
+Path        : /foss/pdks/sky130A
+Status      : VERIFIED
+Type        : directory
+
+PDK root contents:
+lrwxrwxrwx 1 root root 69 Dec 21  2025 /foss/pdks/sky130A -> ciel/sky130/versions/d400e26845538beaeb7cc5fdb9bfc06c30ea27cb/sky130A
+
+PDK subdirectories:
+
+============================================================================
+14. SKY130 LIBRARIES / TECHNOLOGY TREE
+============================================================================
+Path        : /foss/pdks/sky130A/libs.ref/sky130_fd_pr
+Status      : VERIFIED
+Type        : directory
+Path        : /foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice
+Status      : VERIFIED
+Type        : directory
+Path        : /foss/pdks/sky130A/libs.tech
+Status      : VERIFIED
+Type        : directory
+Path        : /foss/pdks/sky130A/libs.tech/combined
+Status      : VERIFIED
+Type        : directory
+
+============================================================================
+15. SKY130 COMBINED MODEL ENTRY POINT
+============================================================================
+Path        : /foss/pdks/sky130A/libs.tech/combined/sky130.lib.spice
+Status      : VERIFIED
+Type        : regular file
+SHA256      : 48de7c677e2c6e7d09b2559279de9f818be71010a4aa933d728eb4db3b133c84
+
+SHA256:
+48de7c677e2c6e7d09b2559279de9f818be71010a4aa933d728eb4db3b133c84  /foss/pdks/sky130A/libs.tech/combined/sky130.lib.spice
+
+Corners / .lib declarations:
+82:.lib tt
+109:.lib sf
+136:.lib ff
+163:.lib ss
+190:.lib fs
+217:.lib ll
+244:.lib hh
+271:.lib hl
+298:.lib lh
+325:.lib ss_ll
+352:.lib ss_hl
+379:.lib ss_lh
+406:.lib ss_hh
+433:.lib sf_ll
+460:.lib sf_hl
+487:.lib sf_hh
+514:.lib fs_ll
+541:.lib fs_hl
+568:.lib fs_lh
+595:.lib fs_hh
+622:.lib ff_ll
+649:.lib ff_hl
+676:.lib ff_lh
+703:.lib ff_hh
+730:.lib tt_mm
+757:.lib sf_mm
+784:.lib ff_mm
+811:.lib ss_mm
+838:.lib fs_mm
+865:.lib ll_mm
+892:.lib hh_mm
+919:.lib hl_mm
+946:.lib lh_mm
+973:.lib ss_ll_mm
+1000:.lib ss_hl_mm
+1027:.lib ss_lh_mm
+1054:.lib ss_hh_mm
+1081:.lib sf_ll_mm
+1108:.lib sf_hl_mm
+1135:.lib sf_hh_mm
+1162:.lib fs_ll_mm
+1189:.lib fs_hl_mm
+1216:.lib fs_lh_mm
+1243:.lib fs_hh_mm
+1270:.lib ff_ll_mm
+1297:.lib ff_hl_mm
+1324:.lib ff_lh_mm
+1351:.lib ff_hh_mm
+1378:.lib mc
+
+Included files:
+89:.include continuous/parameters_fet_tt.spice
+90:.include continuous/parameters_res_nom.spice
+91:.include continuous/parameters_cap_nom.spice
+94:.include continuous/models_global.spice
+95:.include continuous/models_fet.spice
+96:.include continuous/models_bjt.spice
+97:.include continuous/models_diodes.spice
+98:.include continuous/models_resistors.spice
+99:.include continuous/models_capacitors.spice
+102:.include corners/tt.spice
+103:.include corners/tt/specialized_cells.spice
+104:.include rescap/res_typical__cap_typical.spice
+105:.include rescap/res_typical__cap_typical__lin.spice
+116:.include continuous/parameters_fet_sf.spice
+117:.include continuous/parameters_res_nom.spice
+118:.include continuous/parameters_cap_nom.spice
+121:.include continuous/models_global.spice
+122:.include continuous/models_fet.spice
+123:.include continuous/models_bjt.spice
+124:.include continuous/models_diodes.spice
+125:.include continuous/models_resistors.spice
+126:.include continuous/models_capacitors.spice
+129:.include corners/sf.spice
+130:.include corners/sf/specialized_cells.spice
+131:.include rescap/res_typical__cap_typical.spice
+132:.include rescap/res_typical__cap_typical__lin.spice
+143:.include continuous/parameters_fet_ff.spice
+144:.include continuous/parameters_res_nom.spice
+145:.include continuous/parameters_cap_nom.spice
+148:.include continuous/models_global.spice
+149:.include continuous/models_fet.spice
+150:.include continuous/models_bjt.spice
+151:.include continuous/models_diodes.spice
+152:.include continuous/models_resistors.spice
+153:.include continuous/models_capacitors.spice
+156:.include corners/ff.spice
+157:.include corners/ff/specialized_cells.spice
+158:.include rescap/res_typical__cap_typical.spice
+159:.include rescap/res_typical__cap_typical__lin.spice
+170:.include continuous/parameters_fet_ss.spice
+171:.include continuous/parameters_res_nom.spice
+172:.include continuous/parameters_cap_nom.spice
+175:.include continuous/models_global.spice
+176:.include continuous/models_fet.spice
+177:.include continuous/models_bjt.spice
+178:.include continuous/models_diodes.spice
+179:.include continuous/models_resistors.spice
+180:.include continuous/models_capacitors.spice
+183:.include corners/ss.spice
+184:.include corners/ss/specialized_cells.spice
+185:.include rescap/res_typical__cap_typical.spice
+186:.include rescap/res_typical__cap_typical__lin.spice
+197:.include continuous/parameters_fet_fs.spice
+198:.include continuous/parameters_res_nom.spice
+199:.include continuous/parameters_cap_nom.spice
+202:.include continuous/models_global.spice
+203:.include continuous/models_fet.spice
+204:.include continuous/models_bjt.spice
+205:.include continuous/models_diodes.spice
+206:.include continuous/models_resistors.spice
+207:.include continuous/models_capacitors.spice
+210:.include corners/fs.spice
+211:.include corners/fs/specialized_cells.spice
+212:.include rescap/res_typical__cap_typical.spice
+213:.include rescap/res_typical__cap_typical__lin.spice
+224:.include continuous/parameters_fet_tt.spice
+225:.include continuous/parameters_res_low.spice
+226:.include continuous/parameters_cap_low.spice
+229:.include continuous/models_global.spice
+230:.include continuous/models_fet.spice
+231:.include continuous/models_bjt.spice
+232:.include continuous/models_diodes.spice
+233:.include continuous/models_resistors.spice
+234:.include continuous/models_capacitors.spice
+237:.include corners/tt.spice
+238:.include corners/tt/specialized_cells.spice
+239:.include rescap/res_low__cap_low.spice
+240:.include rescap/res_low__cap_low__lin.spice
+251:.include continuous/parameters_fet_tt.spice
+252:.include continuous/parameters_res_high.spice
+253:.include continuous/parameters_cap_high.spice
+256:.include continuous/models_global.spice
+257:.include continuous/models_fet.spice
+258:.include continuous/models_bjt.spice
+259:.include continuous/models_diodes.spice
+260:.include continuous/models_resistors.spice
+261:.include continuous/models_capacitors.spice
+264:.include corners/tt.spice
+265:.include corners/tt/specialized_cells.spice
+266:.include rescap/res_high__cap_high.spice
+267:.include rescap/res_high__cap_high__lin.spice
+278:.include continuous/parameters_fet_tt.spice
+279:.include continuous/parameters_res_high.spice
+280:.include continuous/parameters_cap_low.spice
+283:.include continuous/models_global.spice
+284:.include continuous/models_fet.spice
+285:.include continuous/models_bjt.spice
+286:.include continuous/models_diodes.spice
+287:.include continuous/models_resistors.spice
+288:.include continuous/models_capacitors.spice
+291:.include corners/tt.spice
+292:.include corners/tt/specialized_cells.spice
+293:.include rescap/res_high__cap_low.spice
+294:.include rescap/res_high__cap_low__lin.spice
+305:.include continuous/parameters_fet_tt.spice
+306:.include continuous/parameters_res_low.spice
+307:.include continuous/parameters_cap_high.spice
+310:.include continuous/models_global.spice
+311:.include continuous/models_fet.spice
+312:.include continuous/models_bjt.spice
+313:.include continuous/models_diodes.spice
+314:.include continuous/models_resistors.spice
+315:.include continuous/models_capacitors.spice
+318:.include corners/tt.spice
+319:.include corners/tt/specialized_cells.spice
+320:.include rescap/res_low__cap_high.spice
+321:.include rescap/res_low__cap_high__lin.spice
+332:.include continuous/parameters_fet_ss.spice
+333:.include continuous/parameters_res_low.spice
+334:.include continuous/parameters_cap_low.spice
+337:.include continuous/models_global.spice
+338:.include continuous/models_fet.spice
+339:.include continuous/models_bjt.spice
+340:.include continuous/models_diodes.spice
+341:.include continuous/models_resistors.spice
+342:.include continuous/models_capacitors.spice
+345:.include corners/ss.spice
+346:.include corners/ss/specialized_cells.spice
+347:.include rescap/res_low__cap_low.spice
+348:.include rescap/res_low__cap_low__lin.spice
+359:.include continuous/parameters_fet_ss.spice
+360:.include continuous/parameters_res_high.spice
+361:.include continuous/parameters_cap_low.spice
+364:.include continuous/models_global.spice
+365:.include continuous/models_fet.spice
+366:.include continuous/models_bjt.spice
+367:.include continuous/models_diodes.spice
+368:.include continuous/models_resistors.spice
+369:.include continuous/models_capacitors.spice
+372:.include corners/ss.spice
+373:.include corners/ss/specialized_cells.spice
+374:.include rescap/res_high__cap_low.spice
+375:.include rescap/res_high__cap_low__lin.spice
+386:.include continuous/parameters_fet_ss.spice
+387:.include continuous/parameters_res_low.spice
+388:.include continuous/parameters_cap_high.spice
+391:.include continuous/models_global.spice
+392:.include continuous/models_fet.spice
+393:.include continuous/models_bjt.spice
+394:.include continuous/models_diodes.spice
+395:.include continuous/models_resistors.spice
+396:.include continuous/models_capacitors.spice
+399:.include corners/ss.spice
+400:.include corners/ss/specialized_cells.spice
+401:.include rescap/res_low__cap_high.spice
+402:.include rescap/res_low__cap_high__lin.spice
+413:.include continuous/parameters_fet_ss.spice
+414:.include continuous/parameters_res_high.spice
+415:.include continuous/parameters_cap_high.spice
+418:.include continuous/models_global.spice
+419:.include continuous/models_fet.spice
+420:.include continuous/models_bjt.spice
+421:.include continuous/models_diodes.spice
+422:.include continuous/models_resistors.spice
+423:.include continuous/models_capacitors.spice
+426:.include corners/ss.spice
+427:.include corners/ss/specialized_cells.spice
+428:.include rescap/res_high__cap_high.spice
+429:.include rescap/res_high__cap_high__lin.spice
+440:.include continuous/parameters_fet_sf.spice
+441:.include continuous/parameters_res_low.spice
+442:.include continuous/parameters_cap_low.spice
+445:.include continuous/models_global.spice
+446:.include continuous/models_fet.spice
+447:.include continuous/models_bjt.spice
+448:.include continuous/models_diodes.spice
+449:.include continuous/models_resistors.spice
+450:.include continuous/models_capacitors.spice
+453:.include corners/sf.spice
+454:.include corners/sf/specialized_cells.spice
+455:.include rescap/res_low__cap_low.spice
+456:.include rescap/res_low__cap_low__lin.spice
+467:.include continuous/parameters_fet_sf.spice
+468:.include continuous/parameters_res_high.spice
+469:.include continuous/parameters_cap_low.spice
+472:.include continuous/models_global.spice
+473:.include continuous/models_fet.spice
+474:.include continuous/models_bjt.spice
+475:.include continuous/models_diodes.spice
+476:.include continuous/models_resistors.spice
+477:.include continuous/models_capacitors.spice
+480:.include corners/sf.spice
+481:.include corners/sf/specialized_cells.spice
+482:.include rescap/res_high__cap_low.spice
+483:.include rescap/res_high__cap_low__lin.spice
+494:.include continuous/parameters_fet_sf.spice
+495:.include continuous/parameters_res_high.spice
+496:.include continuous/parameters_cap_high.spice
+499:.include continuous/models_global.spice
+500:.include continuous/models_fet.spice
+501:.include continuous/models_bjt.spice
+502:.include continuous/models_diodes.spice
+503:.include continuous/models_resistors.spice
+504:.include continuous/models_capacitors.spice
+507:.include corners/sf.spice
+508:.include corners/sf/specialized_cells.spice
+509:.include rescap/res_high__cap_high.spice
+510:.include rescap/res_high__cap_high__lin.spice
+521:.include continuous/parameters_fet_fs.spice
+522:.include continuous/parameters_res_low.spice
+523:.include continuous/parameters_cap_low.spice
+526:.include continuous/models_global.spice
+527:.include continuous/models_fet.spice
+528:.include continuous/models_bjt.spice
+529:.include continuous/models_diodes.spice
+530:.include continuous/models_resistors.spice
+531:.include continuous/models_capacitors.spice
+534:.include corners/fs.spice
+535:.include corners/fs/specialized_cells.spice
+536:.include rescap/res_low__cap_low.spice
+537:.include rescap/res_low__cap_low__lin.spice
+548:.include continuous/parameters_fet_fs.spice
+549:.include continuous/parameters_res_high.spice
+550:.include continuous/parameters_cap_low.spice
+553:.include continuous/models_global.spice
+554:.include continuous/models_fet.spice
+555:.include continuous/models_bjt.spice
+556:.include continuous/models_diodes.spice
+557:.include continuous/models_resistors.spice
+558:.include continuous/models_capacitors.spice
+561:.include corners/fs.spice
+562:.include corners/fs/specialized_cells.spice
+563:.include rescap/res_high__cap_low.spice
+564:.include rescap/res_high__cap_low__lin.spice
+575:.include continuous/parameters_fet_fs.spice
+576:.include continuous/parameters_res_low.spice
+577:.include continuous/parameters_cap_high.spice
+580:.include continuous/models_global.spice
+581:.include continuous/models_fet.spice
+582:.include continuous/models_bjt.spice
+583:.include continuous/models_diodes.spice
+584:.include continuous/models_resistors.spice
+585:.include continuous/models_capacitors.spice
+588:.include corners/fs.spice
+589:.include corners/fs/specialized_cells.spice
+590:.include rescap/res_low__cap_high.spice
+591:.include rescap/res_low__cap_high__lin.spice
+602:.include continuous/parameters_fet_fs.spice
+603:.include continuous/parameters_res_high.spice
+604:.include continuous/parameters_cap_high.spice
+607:.include continuous/models_global.spice
+608:.include continuous/models_fet.spice
+609:.include continuous/models_bjt.spice
+610:.include continuous/models_diodes.spice
+611:.include continuous/models_resistors.spice
+612:.include continuous/models_capacitors.spice
+615:.include corners/fs.spice
+616:.include corners/fs/specialized_cells.spice
+617:.include rescap/res_high__cap_high.spice
+618:.include rescap/res_high__cap_high__lin.spice
+629:.include continuous/parameters_fet_ff.spice
+630:.include continuous/parameters_res_low.spice
+631:.include continuous/parameters_cap_low.spice
+634:.include continuous/models_global.spice
+635:.include continuous/models_fet.spice
+636:.include continuous/models_bjt.spice
+637:.include continuous/models_diodes.spice
+638:.include continuous/models_resistors.spice
+639:.include continuous/models_capacitors.spice
+642:.include corners/ff.spice
+643:.include corners/ff/specialized_cells.spice
+644:.include rescap/res_low__cap_low.spice
+645:.include rescap/res_low__cap_low__lin.spice
+656:.include continuous/parameters_fet_ff.spice
+657:.include continuous/parameters_res_high.spice
+658:.include continuous/parameters_cap_low.spice
+661:.include continuous/models_global.spice
+662:.include continuous/models_fet.spice
+663:.include continuous/models_bjt.spice
+664:.include continuous/models_diodes.spice
+665:.include continuous/models_resistors.spice
+666:.include continuous/models_capacitors.spice
+669:.include corners/ff.spice
+670:.include corners/ff/specialized_cells.spice
+671:.include rescap/res_high__cap_low.spice
+672:.include rescap/res_high__cap_low__lin.spice
+683:.include continuous/parameters_fet_ff.spice
+684:.include continuous/parameters_res_low.spice
+685:.include continuous/parameters_cap_high.spice
+688:.include continuous/models_global.spice
+689:.include continuous/models_fet.spice
+690:.include continuous/models_bjt.spice
+691:.include continuous/models_diodes.spice
+692:.include continuous/models_resistors.spice
+693:.include continuous/models_capacitors.spice
+696:.include corners/ff.spice
+697:.include corners/ff/specialized_cells.spice
+698:.include rescap/res_low__cap_high.spice
+699:.include rescap/res_low__cap_high__lin.spice
+710:.include continuous/parameters_fet_ff.spice
+711:.include continuous/parameters_res_high.spice
+712:.include continuous/parameters_cap_high.spice
+715:.include continuous/models_global.spice
+716:.include continuous/models_fet.spice
+717:.include continuous/models_bjt.spice
+718:.include continuous/models_diodes.spice
+719:.include continuous/models_resistors.spice
+720:.include continuous/models_capacitors.spice
+723:.include corners/ff.spice
+724:.include corners/ff/specialized_cells.spice
+725:.include rescap/res_high__cap_high.spice
+726:.include rescap/res_high__cap_high__lin.spice
+737:.include continuous/parameters_fet_tt.spice
+738:.include continuous/parameters_res_nom.spice
+739:.include continuous/parameters_cap_nom.spice
+742:.include continuous/models_global.spice
+743:.include continuous/models_fet.spice
+744:.include continuous/models_bjt.spice
+745:.include continuous/models_diodes.spice
+746:.include continuous/models_resistors.spice
+747:.include continuous/models_capacitors.spice
+750:.include corners/tt.spice
+751:.include corners/tt/specialized_cells.spice
+752:.include rescap/res_typical__cap_typical.spice
+753:.include rescap/res_typical__cap_typical__lin.spice
+764:.include continuous/parameters_fet_sf.spice
+765:.include continuous/parameters_res_nom.spice
+766:.include continuous/parameters_cap_nom.spice
+769:.include continuous/models_global.spice
+770:.include continuous/models_fet.spice
+771:.include continuous/models_bjt.spice
+772:.include continuous/models_diodes.spice
+773:.include continuous/models_resistors.spice
+774:.include continuous/models_capacitors.spice
+777:.include corners/sf.spice
+778:.include corners/sf/specialized_cells.spice
+779:.include rescap/res_typical__cap_typical.spice
+780:.include rescap/res_typical__cap_typical__lin.spice
+791:.include continuous/parameters_fet_ff.spice
+792:.include continuous/parameters_res_nom.spice
+793:.include continuous/parameters_cap_nom.spice
+796:.include continuous/models_global.spice
+797:.include continuous/models_fet.spice
+798:.include continuous/models_bjt.spice
+799:.include continuous/models_diodes.spice
+800:.include continuous/models_resistors.spice
+801:.include continuous/models_capacitors.spice
+804:.include corners/ff.spice
+805:.include corners/ff/specialized_cells.spice
+806:.include rescap/res_typical__cap_typical.spice
+807:.include rescap/res_typical__cap_typical__lin.spice
+818:.include continuous/parameters_fet_ss.spice
+819:.include continuous/parameters_res_nom.spice
+820:.include continuous/parameters_cap_nom.spice
+823:.include continuous/models_global.spice
+824:.include continuous/models_fet.spice
+825:.include continuous/models_bjt.spice
+826:.include continuous/models_diodes.spice
+827:.include continuous/models_resistors.spice
+828:.include continuous/models_capacitors.spice
+831:.include corners/ss.spice
+832:.include corners/ss/specialized_cells.spice
+833:.include rescap/res_typical__cap_typical.spice
+834:.include rescap/res_typical__cap_typical__lin.spice
+845:.include continuous/parameters_fet_fs.spice
+846:.include continuous/parameters_res_nom.spice
+847:.include continuous/parameters_cap_nom.spice
+850:.include continuous/models_global.spice
+851:.include continuous/models_fet.spice
+852:.include continuous/models_bjt.spice
+853:.include continuous/models_diodes.spice
+854:.include continuous/models_resistors.spice
+855:.include continuous/models_capacitors.spice
+858:.include corners/fs.spice
+859:.include corners/fs/specialized_cells.spice
+860:.include rescap/res_typical__cap_typical.spice
+861:.include rescap/res_typical__cap_typical__lin.spice
+872:.include continuous/parameters_fet_tt.spice
+873:.include continuous/parameters_res_low.spice
+874:.include continuous/parameters_cap_low.spice
+877:.include continuous/models_global.spice
+878:.include continuous/models_fet.spice
+879:.include continuous/models_bjt.spice
+880:.include continuous/models_diodes.spice
+881:.include continuous/models_resistors.spice
+882:.include continuous/models_capacitors.spice
+885:.include corners/tt.spice
+886:.include corners/tt/specialized_cells.spice
+887:.include rescap/res_low__cap_low.spice
+888:.include rescap/res_low__cap_low__lin.spice
+899:.include continuous/parameters_fet_tt.spice
+900:.include continuous/parameters_res_high.spice
+901:.include continuous/parameters_cap_high.spice
+904:.include continuous/models_global.spice
+905:.include continuous/models_fet.spice
+906:.include continuous/models_bjt.spice
+907:.include continuous/models_diodes.spice
+908:.include continuous/models_resistors.spice
+909:.include continuous/models_capacitors.spice
+912:.include corners/tt.spice
+913:.include corners/tt/specialized_cells.spice
+914:.include rescap/res_high__cap_high.spice
+915:.include rescap/res_high__cap_high__lin.spice
+926:.include continuous/parameters_fet_tt.spice
+927:.include continuous/parameters_res_high.spice
+928:.include continuous/parameters_cap_low.spice
+931:.include continuous/models_global.spice
+932:.include continuous/models_fet.spice
+933:.include continuous/models_bjt.spice
+934:.include continuous/models_diodes.spice
+935:.include continuous/models_resistors.spice
+936:.include continuous/models_capacitors.spice
+939:.include corners/tt.spice
+940:.include corners/tt/specialized_cells.spice
+941:.include rescap/res_high__cap_low.spice
+942:.include rescap/res_high__cap_low__lin.spice
+953:.include continuous/parameters_fet_tt.spice
+954:.include continuous/parameters_res_low.spice
+955:.include continuous/parameters_cap_high.spice
+958:.include continuous/models_global.spice
+959:.include continuous/models_fet.spice
+960:.include continuous/models_bjt.spice
+961:.include continuous/models_diodes.spice
+962:.include continuous/models_resistors.spice
+963:.include continuous/models_capacitors.spice
+966:.include corners/tt.spice
+967:.include corners/tt/specialized_cells.spice
+968:.include rescap/res_low__cap_high.spice
+969:.include rescap/res_low__cap_high__lin.spice
+980:.include continuous/parameters_fet_ss.spice
+981:.include continuous/parameters_res_low.spice
+982:.include continuous/parameters_cap_low.spice
+985:.include continuous/models_global.spice
+986:.include continuous/models_fet.spice
+987:.include continuous/models_bjt.spice
+988:.include continuous/models_diodes.spice
+989:.include continuous/models_resistors.spice
+990:.include continuous/models_capacitors.spice
+993:.include corners/ss.spice
+994:.include corners/ss/specialized_cells.spice
+995:.include rescap/res_low__cap_low.spice
+996:.include rescap/res_low__cap_low__lin.spice
+1007:.include continuous/parameters_fet_ss.spice
+1008:.include continuous/parameters_res_high.spice
+1009:.include continuous/parameters_cap_low.spice
+1012:.include continuous/models_global.spice
+1013:.include continuous/models_fet.spice
+1014:.include continuous/models_bjt.spice
+1015:.include continuous/models_diodes.spice
+1016:.include continuous/models_resistors.spice
+1017:.include continuous/models_capacitors.spice
+1020:.include corners/ss.spice
+1021:.include corners/ss/specialized_cells.spice
+1022:.include rescap/res_high__cap_low.spice
+1023:.include rescap/res_high__cap_low__lin.spice
+1034:.include continuous/parameters_fet_ss.spice
+1035:.include continuous/parameters_res_low.spice
+1036:.include continuous/parameters_cap_high.spice
+1039:.include continuous/models_global.spice
+1040:.include continuous/models_fet.spice
+1041:.include continuous/models_bjt.spice
+1042:.include continuous/models_diodes.spice
+1043:.include continuous/models_resistors.spice
+1044:.include continuous/models_capacitors.spice
+1047:.include corners/ss.spice
+1048:.include corners/ss/specialized_cells.spice
+1049:.include rescap/res_low__cap_high.spice
+1050:.include rescap/res_low__cap_high__lin.spice
+1061:.include continuous/parameters_fet_ss.spice
+1062:.include continuous/parameters_res_high.spice
+1063:.include continuous/parameters_cap_high.spice
+1066:.include continuous/models_global.spice
+1067:.include continuous/models_fet.spice
+1068:.include continuous/models_bjt.spice
+1069:.include continuous/models_diodes.spice
+1070:.include continuous/models_resistors.spice
+1071:.include continuous/models_capacitors.spice
+1074:.include corners/ss.spice
+1075:.include corners/ss/specialized_cells.spice
+1076:.include rescap/res_high__cap_high.spice
+1077:.include rescap/res_high__cap_high__lin.spice
+1088:.include continuous/parameters_fet_sf.spice
+1089:.include continuous/parameters_res_low.spice
+1090:.include continuous/parameters_cap_low.spice
+1093:.include continuous/models_global.spice
+1094:.include continuous/models_fet.spice
+1095:.include continuous/models_bjt.spice
+1096:.include continuous/models_diodes.spice
+1097:.include continuous/models_resistors.spice
+1098:.include continuous/models_capacitors.spice
+1101:.include corners/sf.spice
+1102:.include corners/sf/specialized_cells.spice
+1103:.include rescap/res_low__cap_low.spice
+1104:.include rescap/res_low__cap_low__lin.spice
+1115:.include continuous/parameters_fet_sf.spice
+1116:.include continuous/parameters_res_high.spice
+1117:.include continuous/parameters_cap_low.spice
+1120:.include continuous/models_global.spice
+1121:.include continuous/models_fet.spice
+1122:.include continuous/models_bjt.spice
+1123:.include continuous/models_diodes.spice
+1124:.include continuous/models_resistors.spice
+1125:.include continuous/models_capacitors.spice
+1128:.include corners/sf.spice
+1129:.include corners/sf/specialized_cells.spice
+1130:.include rescap/res_high__cap_low.spice
+1131:.include rescap/res_high__cap_low__lin.spice
+1142:.include continuous/parameters_fet_sf.spice
+1143:.include continuous/parameters_res_high.spice
+1144:.include continuous/parameters_cap_high.spice
+1147:.include continuous/models_global.spice
+1148:.include continuous/models_fet.spice
+1149:.include continuous/models_bjt.spice
+1150:.include continuous/models_diodes.spice
+1151:.include continuous/models_resistors.spice
+1152:.include continuous/models_capacitors.spice
+1155:.include corners/sf.spice
+1156:.include corners/sf/specialized_cells.spice
+1157:.include rescap/res_high__cap_high.spice
+1158:.include rescap/res_high__cap_high__lin.spice
+1169:.include continuous/parameters_fet_fs.spice
+1170:.include continuous/parameters_res_low.spice
+1171:.include continuous/parameters_cap_low.spice
+1174:.include continuous/models_global.spice
+1175:.include continuous/models_fet.spice
+1176:.include continuous/models_bjt.spice
+1177:.include continuous/models_diodes.spice
+1178:.include continuous/models_resistors.spice
+1179:.include continuous/models_capacitors.spice
+1182:.include corners/fs.spice
+1183:.include corners/fs/specialized_cells.spice
+1184:.include rescap/res_low__cap_low.spice
+1185:.include rescap/res_low__cap_low__lin.spice
+1196:.include continuous/parameters_fet_fs.spice
+1197:.include continuous/parameters_res_high.spice
+1198:.include continuous/parameters_cap_low.spice
+1201:.include continuous/models_global.spice
+1202:.include continuous/models_fet.spice
+1203:.include continuous/models_bjt.spice
+1204:.include continuous/models_diodes.spice
+1205:.include continuous/models_resistors.spice
+1206:.include continuous/models_capacitors.spice
+1209:.include corners/fs.spice
+1210:.include corners/fs/specialized_cells.spice
+1211:.include rescap/res_high__cap_low.spice
+1212:.include rescap/res_high__cap_low__lin.spice
+1223:.include continuous/parameters_fet_fs.spice
+1224:.include continuous/parameters_res_low.spice
+1225:.include continuous/parameters_cap_high.spice
+1228:.include continuous/models_global.spice
+1229:.include continuous/models_fet.spice
+1230:.include continuous/models_bjt.spice
+1231:.include continuous/models_diodes.spice
+1232:.include continuous/models_resistors.spice
+1233:.include continuous/models_capacitors.spice
+1236:.include corners/fs.spice
+1237:.include corners/fs/specialized_cells.spice
+1238:.include rescap/res_low__cap_high.spice
+1239:.include rescap/res_low__cap_high__lin.spice
+1250:.include continuous/parameters_fet_fs.spice
+1251:.include continuous/parameters_res_high.spice
+1252:.include continuous/parameters_cap_high.spice
+1255:.include continuous/models_global.spice
+1256:.include continuous/models_fet.spice
+1257:.include continuous/models_bjt.spice
+1258:.include continuous/models_diodes.spice
+1259:.include continuous/models_resistors.spice
+1260:.include continuous/models_capacitors.spice
+1263:.include corners/fs.spice
+1264:.include corners/fs/specialized_cells.spice
+1265:.include rescap/res_high__cap_high.spice
+1266:.include rescap/res_high__cap_high__lin.spice
+1277:.include continuous/parameters_fet_ff.spice
+1278:.include continuous/parameters_res_low.spice
+1279:.include continuous/parameters_cap_low.spice
+1282:.include continuous/models_global.spice
+1283:.include continuous/models_fet.spice
+1284:.include continuous/models_bjt.spice
+1285:.include continuous/models_diodes.spice
+1286:.include continuous/models_resistors.spice
+1287:.include continuous/models_capacitors.spice
+1290:.include corners/ff.spice
+1291:.include corners/ff/specialized_cells.spice
+1292:.include rescap/res_low__cap_low.spice
+1293:.include rescap/res_low__cap_low__lin.spice
+1304:.include continuous/parameters_fet_ff.spice
+1305:.include continuous/parameters_res_high.spice
+1306:.include continuous/parameters_cap_low.spice
+1309:.include continuous/models_global.spice
+1310:.include continuous/models_fet.spice
+1311:.include continuous/models_bjt.spice
+1312:.include continuous/models_diodes.spice
+1313:.include continuous/models_resistors.spice
+1314:.include continuous/models_capacitors.spice
+1317:.include corners/ff.spice
+1318:.include corners/ff/specialized_cells.spice
+1319:.include rescap/res_high__cap_low.spice
+1320:.include rescap/res_high__cap_low__lin.spice
+1331:.include continuous/parameters_fet_ff.spice
+1332:.include continuous/parameters_res_low.spice
+1333:.include continuous/parameters_cap_high.spice
+1336:.include continuous/models_global.spice
+1337:.include continuous/models_fet.spice
+1338:.include continuous/models_bjt.spice
+1339:.include continuous/models_diodes.spice
+1340:.include continuous/models_resistors.spice
+1341:.include continuous/models_capacitors.spice
+1344:.include corners/ff.spice
+1345:.include corners/ff/specialized_cells.spice
+1346:.include rescap/res_low__cap_high.spice
+1347:.include rescap/res_low__cap_high__lin.spice
+1358:.include continuous/parameters_fet_ff.spice
+1359:.include continuous/parameters_res_high.spice
+1360:.include continuous/parameters_cap_high.spice
+1363:.include continuous/models_global.spice
+1364:.include continuous/models_fet.spice
+1365:.include continuous/models_bjt.spice
+1366:.include continuous/models_diodes.spice
+1367:.include continuous/models_resistors.spice
+1368:.include continuous/models_capacitors.spice
+1371:.include corners/ff.spice
+1372:.include corners/ff/specialized_cells.spice
+1373:.include rescap/res_high__cap_high.spice
+1374:.include rescap/res_high__cap_high__lin.spice
+1385:.include continuous/parameters_fet_tt.spice
+1386:.include continuous/parameters_res_nom.spice
+1387:.include continuous/parameters_cap_nom.spice
+1390:.include continuous/models_global.spice
+1391:.include continuous/models_fet.spice
+1392:.include continuous/models_bjt.spice
+1393:.include continuous/models_diodes.spice
+1394:.include continuous/models_resistors.spice
+1395:.include continuous/models_capacitors.spice
+1398:.include parameters/critical.spice
+1399:.include parameters/montecarlo.spice
+
+MC_MM_SWITCH declarations:
+83:.param MC_MM_SWITCH=0
+110:.param MC_MM_SWITCH=0
+137:.param MC_MM_SWITCH=0
+164:.param MC_MM_SWITCH=0
+191:.param MC_MM_SWITCH=0
+218:.param MC_MM_SWITCH=0
+245:.param MC_MM_SWITCH=0
+272:.param MC_MM_SWITCH=0
+299:.param MC_MM_SWITCH=0
+326:.param MC_MM_SWITCH=0
+353:.param MC_MM_SWITCH=0
+380:.param MC_MM_SWITCH=0
+407:.param MC_MM_SWITCH=0
+434:.param MC_MM_SWITCH=0
+461:.param MC_MM_SWITCH=0
+488:.param MC_MM_SWITCH=0
+515:.param MC_MM_SWITCH=0
+542:.param MC_MM_SWITCH=0
+569:.param MC_MM_SWITCH=0
+596:.param MC_MM_SWITCH=0
+623:.param MC_MM_SWITCH=0
+650:.param MC_MM_SWITCH=0
+677:.param MC_MM_SWITCH=0
+704:.param MC_MM_SWITCH=0
+731:.param MC_MM_SWITCH=1
+758:.param MC_MM_SWITCH=1
+785:.param MC_MM_SWITCH=1
+812:.param MC_MM_SWITCH=1
+839:.param MC_MM_SWITCH=1
+866:.param MC_MM_SWITCH=1
+893:.param MC_MM_SWITCH=1
+920:.param MC_MM_SWITCH=1
+947:.param MC_MM_SWITCH=1
+974:.param MC_MM_SWITCH=1
+1001:.param MC_MM_SWITCH=1
+1028:.param MC_MM_SWITCH=1
+1055:.param MC_MM_SWITCH=1
+1082:.param MC_MM_SWITCH=1
+1109:.param MC_MM_SWITCH=1
+1136:.param MC_MM_SWITCH=1
+1163:.param MC_MM_SWITCH=1
+1190:.param MC_MM_SWITCH=1
+1217:.param MC_MM_SWITCH=1
+1244:.param MC_MM_SWITCH=1
+1271:.param MC_MM_SWITCH=1
+1298:.param MC_MM_SWITCH=1
+1325:.param MC_MM_SWITCH=1
+1352:.param MC_MM_SWITCH=1
+1379:.param MC_MM_SWITCH=0
+
+============================================================================
+16. PRIMARY DEVICE UNDER INVESTIGATION
+============================================================================
+Device                              : sky130_fd_pr__nfet_01v8
+
+Matching files:
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__esd_nfet_01v8__ff.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__esd_nfet_01v8__fs.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__esd_nfet_01v8__leak.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__esd_nfet_01v8.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__esd_nfet_01v8__sf.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__esd_nfet_01v8__ss.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__esd_nfet_01v8__tt.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__esd_nfet_01v8__tt_leak.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__esd_nfet_01v8__wafer.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__fs.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__fs.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__leak.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__leak.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8_lvt__ff.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8_lvt__ff_discrete.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8_lvt__ff.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8_lvt__fs.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8_lvt__fs_discrete.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8_lvt__fs.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8_lvt__leak.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8_lvt__leak_discrete.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8_lvt__leak.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8_lvt__mismatch.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8_lvt.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8_lvt__sf.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8_lvt__sf_discrete.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8_lvt__sf.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8_lvt__ss.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8_lvt__ss_discrete.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8_lvt__ss.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8_lvt__subvt_mismatch.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8_lvt__tt.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8_lvt__tt_correln.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8_lvt__tt_correlp.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8_lvt__tt_discrete.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8_lvt__tt_leak.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8_lvt__tt_leak_discrete.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8_lvt__tt_leak.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8_lvt__tt.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8_lvt__wafer.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__mismatch.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__sf.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__sf.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ss.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ss.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__subvt_mismatch.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__tt.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__tt_correln.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__tt_correlp.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__tt_leak.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__tt_leak.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__tt.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__wafer.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_aM02W1p65L0p15.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_aM02W1p65L0p18.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_aM02W1p65L0p25.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_aM02W3p00L0p15.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_aM02W3p00L0p18.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_aM02W3p00L0p25.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p18.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p25.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_aM04W1p65L0p15.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_aM04W1p65L0p18.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_aM04W1p65L0p25.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_aM04W3p00L0p15.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_aM04W3p00L0p18.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_aM04W3p00L0p25.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_aM04W5p00L0p15.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_aM04W5p00L0p18.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_aM04W5p00L0p25.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_b__ff.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_b__fs.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_b__leak.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_b.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_b__sf.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_b__ss.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_b__tt.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_b__tt_correln.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_b__tt_correlp.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_b__tt_leak.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_b__wafer.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_hcM04W3p00L0p15.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_hcM04W5p00L0p15.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_aF02W1p65L0p15.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_aF04W0p42L0p15.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_aF04W1p65L0p15.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_aF06W0p42L0p15.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_aF06W0p84L0p15.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_aF06W1p65L0p15.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_aF06W3p00L0p15.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_aF08W0p42L0p15.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_aF08W1p65L0p15.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_aM02W1p65L0p15.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_aM02W1p65L0p18.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_aM02W1p65L0p25.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_aM02W3p00L0p15.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_aM02W3p00L0p18.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_aM02W3p00L0p25.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_aM02W5p00L0p15.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_aM02W5p00L0p18.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_aM02W5p00L0p25.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_aM04W1p65L0p15.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_aM04W1p65L0p18.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_aM04W1p65L0p25.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_aM04W3p00L0p15.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_aM04W3p00L0p18.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_aM04W3p00L0p25.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_aM04W5p00L0p15.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_aM04W5p00L0p18.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_aM04W5p00L0p25.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_b__ff.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_b__fs.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_b__leak.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_bM02W1p65L0p15.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_bM02W1p65L0p18.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_bM02W1p65L0p25.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_bM02W3p00L0p15.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_bM02W3p00L0p18.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_bM02W3p00L0p25.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_bM02W5p00L0p15.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_bM04W1p65L0p15.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_bM04W1p65L0p18.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_bM04W1p65L0p25.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_bM04W3p00L0p15.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_bM04W3p00L0p18.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_bM04W3p00L0p25.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_bM04W5p00L0p15.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_b.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_b__sf.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_b__ss.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_b__tt.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_b__tt_correln.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_b__tt_correlp.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_b__tt_leak.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_b__wafer.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_cM02W1p65L0p15.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_cM02W1p65L0p18.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_cM02W1p65L0p25.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_cM02W3p00L0p15.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_cM02W3p00L0p18.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_cM02W3p00L0p25.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_cM02W5p00L0p15.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_cM02W5p00L0p18.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_cM02W5p00L0p25.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_cM04W1p65L0p15.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_cM04W1p65L0p18.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_cM04W1p65L0p25.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_cM04W3p00L0p15.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_cM04W3p00L0p18.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_cM04W3p00L0p25.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_cM04W5p00L0p15.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_cM04W5p00L0p18.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_cM04W5p00L0p25.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt__mismatch.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_mcM04W3p00L0p15.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_mcM04W5p00L0p15.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8__mismatch.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__special_nfet_01v8__ff.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__special_nfet_01v8__ff.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__special_nfet_01v8__fs.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__special_nfet_01v8__fs.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__special_nfet_01v8__leak.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__special_nfet_01v8__leak.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__special_nfet_01v8__mismatch.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__special_nfet_01v8.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__special_nfet_01v8__sf.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__special_nfet_01v8__sf.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__special_nfet_01v8__ss.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__special_nfet_01v8__ss.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__special_nfet_01v8__subvt_mismatch.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__special_nfet_01v8__tt.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__special_nfet_01v8__tt_correln.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__special_nfet_01v8__tt_correlp.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__special_nfet_01v8__tt_leak.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__special_nfet_01v8__tt_leak.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__special_nfet_01v8__tt.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__special_nfet_01v8__wafer.corner.spice
+
+Subcircuit definitions:
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:35:.subckt  sky130_fd_pr__nfet_01v8 d g s b
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__sf.pm3.spice:35:.subckt  sky130_fd_pr__nfet_01v8 d g s b
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__special_nfet_01v8__leak.pm3.spice:28:.subckt  sky130_fd_pr__nfet_01v8 d g s b
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8.pm3.spice:37:.subckt  sky130_fd_pr__nfet_01v8 d g s b
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__tt_leak.pm3.spice:35:.subckt  sky130_fd_pr__nfet_01v8 d g s b
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ss.pm3.spice:35:.subckt  sky130_fd_pr__nfet_01v8 d g s b
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__tt.pm3.spice:35:.subckt  sky130_fd_pr__nfet_01v8 d g s b
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__leak.pm3.spice:35:.subckt  sky130_fd_pr__nfet_01v8 d g s b
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__fs.pm3.spice:35:.subckt  sky130_fd_pr__nfet_01v8 d g s b
+
+Model definitions:
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:39:.model sky130_fd_pr__nfet_01v8__model.0 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:310:.model sky130_fd_pr__nfet_01v8__model.1 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:581:.model sky130_fd_pr__nfet_01v8__model.2 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:852:.model sky130_fd_pr__nfet_01v8__model.3 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:1123:.model sky130_fd_pr__nfet_01v8__model.4 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:1394:.model sky130_fd_pr__nfet_01v8__model.5 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:1665:.model sky130_fd_pr__nfet_01v8__model.6 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:1936:.model sky130_fd_pr__nfet_01v8__model.7 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:2207:.model sky130_fd_pr__nfet_01v8__model.8 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:2478:.model sky130_fd_pr__nfet_01v8__model.9 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:2749:.model sky130_fd_pr__nfet_01v8__model.10 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:3020:.model sky130_fd_pr__nfet_01v8__model.11 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:3291:.model sky130_fd_pr__nfet_01v8__model.12 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:3562:.model sky130_fd_pr__nfet_01v8__model.13 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:3833:.model sky130_fd_pr__nfet_01v8__model.14 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:4104:.model sky130_fd_pr__nfet_01v8__model.15 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:4375:.model sky130_fd_pr__nfet_01v8__model.16 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:4646:.model sky130_fd_pr__nfet_01v8__model.17 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:4917:.model sky130_fd_pr__nfet_01v8__model.18 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:5188:.model sky130_fd_pr__nfet_01v8__model.19 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:5459:.model sky130_fd_pr__nfet_01v8__model.20 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:5730:.model sky130_fd_pr__nfet_01v8__model.21 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:6001:.model sky130_fd_pr__nfet_01v8__model.22 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:6272:.model sky130_fd_pr__nfet_01v8__model.23 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:6543:.model sky130_fd_pr__nfet_01v8__model.24 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:6814:.model sky130_fd_pr__nfet_01v8__model.25 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:7085:.model sky130_fd_pr__nfet_01v8__model.26 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:7356:.model sky130_fd_pr__nfet_01v8__model.27 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:7627:.model sky130_fd_pr__nfet_01v8__model.28 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:7898:.model sky130_fd_pr__nfet_01v8__model.29 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:8169:.model sky130_fd_pr__nfet_01v8__model.30 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:8440:.model sky130_fd_pr__nfet_01v8__model.31 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:8711:.model sky130_fd_pr__nfet_01v8__model.32 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:8982:.model sky130_fd_pr__nfet_01v8__model.33 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:9253:.model sky130_fd_pr__nfet_01v8__model.34 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:9524:.model sky130_fd_pr__nfet_01v8__model.35 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:9795:.model sky130_fd_pr__nfet_01v8__model.36 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:10066:.model sky130_fd_pr__nfet_01v8__model.37 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:10337:.model sky130_fd_pr__nfet_01v8__model.38 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:10608:.model sky130_fd_pr__nfet_01v8__model.39 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:10879:.model sky130_fd_pr__nfet_01v8__model.40 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:11150:.model sky130_fd_pr__nfet_01v8__model.41 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:11421:.model sky130_fd_pr__nfet_01v8__model.42 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:11692:.model sky130_fd_pr__nfet_01v8__model.43 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:11963:.model sky130_fd_pr__nfet_01v8__model.44 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:12234:.model sky130_fd_pr__nfet_01v8__model.45 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:12505:.model sky130_fd_pr__nfet_01v8__model.46 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:12776:.model sky130_fd_pr__nfet_01v8__model.47 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:13047:.model sky130_fd_pr__nfet_01v8__model.48 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:13318:.model sky130_fd_pr__nfet_01v8__model.49 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:13589:.model sky130_fd_pr__nfet_01v8__model.50 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:13860:.model sky130_fd_pr__nfet_01v8__model.51 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:14131:.model sky130_fd_pr__nfet_01v8__model.52 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:14402:.model sky130_fd_pr__nfet_01v8__model.53 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:14673:.model sky130_fd_pr__nfet_01v8__model.54 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:14944:.model sky130_fd_pr__nfet_01v8__model.55 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:15215:.model sky130_fd_pr__nfet_01v8__model.56 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:15486:.model sky130_fd_pr__nfet_01v8__model.57 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:15757:.model sky130_fd_pr__nfet_01v8__model.58 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:16028:.model sky130_fd_pr__nfet_01v8__model.59 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:16299:.model sky130_fd_pr__nfet_01v8__model.60 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:16570:.model sky130_fd_pr__nfet_01v8__model.61 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:16841:.model sky130_fd_pr__nfet_01v8__model.62 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:17112:.model sky130_fd_pr__nfet_01v8__model.63 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:17383:.model sky130_fd_pr__nfet_01v8__model.64 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:17654:.model sky130_fd_pr__nfet_01v8__model.65 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:17925:.model sky130_fd_pr__nfet_01v8__model.66 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:18196:.model sky130_fd_pr__nfet_01v8__model.67 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:18467:.model sky130_fd_pr__nfet_01v8__model.68 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:18738:.model sky130_fd_pr__nfet_01v8__model.69 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:19009:.model sky130_fd_pr__nfet_01v8__model.70 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:19280:.model sky130_fd_pr__nfet_01v8__model.71 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:19551:.model sky130_fd_pr__nfet_01v8__model.72 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:19822:.model sky130_fd_pr__nfet_01v8__model.73 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:20093:.model sky130_fd_pr__nfet_01v8__model.74 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:20364:.model sky130_fd_pr__nfet_01v8__model.75 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:20635:.model sky130_fd_pr__nfet_01v8__model.76 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:20906:.model sky130_fd_pr__nfet_01v8__model.77 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:21177:.model sky130_fd_pr__nfet_01v8__model.78 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:21448:.model sky130_fd_pr__nfet_01v8__model.79 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:21719:.model sky130_fd_pr__nfet_01v8__model.80 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:21990:.model sky130_fd_pr__nfet_01v8__model.81 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:22261:.model sky130_fd_pr__nfet_01v8__model.82 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:22532:.model sky130_fd_pr__nfet_01v8__model.83 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:22803:.model sky130_fd_pr__nfet_01v8__model.84 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:23074:.model sky130_fd_pr__nfet_01v8__model.85 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:23345:.model sky130_fd_pr__nfet_01v8__model.86 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:23616:.model sky130_fd_pr__nfet_01v8__model.87 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:23887:.model sky130_fd_pr__nfet_01v8__model.88 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:24158:.model sky130_fd_pr__nfet_01v8__model.89 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:24429:.model sky130_fd_pr__nfet_01v8__model.90 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:24700:.model sky130_fd_pr__nfet_01v8__model.91 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:24971:.model sky130_fd_pr__nfet_01v8__model.92 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:25242:.model sky130_fd_pr__nfet_01v8__model.93 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:25513:.model sky130_fd_pr__nfet_01v8__model.94 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:25784:.model sky130_fd_pr__nfet_01v8__model.95 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:26055:.model sky130_fd_pr__nfet_01v8__model.96 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:26326:.model sky130_fd_pr__nfet_01v8__model.97 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:26597:.model sky130_fd_pr__nfet_01v8__model.98 nmos
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice:26868:.model sky130_fd_pr__nfet_01v8__model.99 nmos
+
+============================================================================
+17. MODEL DEPENDENCY: MC_MM_SWITCH
+============================================================================
+Searching SKY130 for MC_MM_SWITCH...
+/foss/pdks/sky130A/libs.tech/ngspice/sonos_see_e/begin_of_life.pm3.spice:37:+ tox = {1.54e-008*sky130_fd_bs_flash__special_sonosfet_star__tox_mult+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(1.54e-008*sky130_fd_bs_flash__special_sonosfet_star__tox_mult*(sky130_fd_bs_flash__special_sonosfet_star__tox_slope/sqrt(l*w*mult)))}
+/foss/pdks/sky130A/libs.tech/ngspice/sonos_see_e/begin_of_life.pm3.spice:69:+ vth0 = {-1.15+sky130_fd_bs_flash__special_sonosfet_star__vth0_diff_0+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_bs_flash__special_sonosfet_star__vth0_slope/sqrt(w*l*mult))}
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:36:+ toxe = {3.996598e-09+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(4.148e-09*0.9635*(sky130_fd_pr__nfet_01v8__toxe_slope/sqrt(l*w*mult)))}
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:48:+ vth0 = {0.52129956+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__vth0_slope/sqrt(l*w*mult))}
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:73:+ voff = {-0.1052686+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__voff_slope/sqrt(l*w*mult))}
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:288:+ toxe = {3.996598e-09+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(4.148e-09*0.9635*(sky130_fd_pr__nfet_01v8__toxe_slope/sqrt(l*w*mult)))}
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:300:+ vth0 = {0.52129956+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__vth0_slope/sqrt(l*w*mult))}
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:325:+ voff = {-0.1052686+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__voff_slope/sqrt(l*w*mult))}
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:540:+ toxe = {3.996598e-09+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(4.148e-09*0.9635*(sky130_fd_pr__nfet_01v8__toxe_slope/sqrt(l*w*mult)))}
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:552:+ vth0 = {5.216677013e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__vth0_slope1/sqrt(l*w*mult))} lvth0 = -2.927416090e-09 wvth0 = -3.681462022e-08 pvth0 = 2.927454790e-13
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:577:+ voff = {-1.049993880e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__voff_slope/sqrt(l*w*mult))} lvoff = -2.140741475e-09 wvoff = -2.692155196e-08 pvoff = 2.140769775e-13
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:792:+ toxe = {3.996598e-09+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(4.148e-09*0.9635*(sky130_fd_pr__nfet_01v8__toxe_slope/sqrt(l*w*mult)))}
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:804:+ vth0 = {5.162579434e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__vth0_slope/sqrt(l*w*mult))} lvth0 = 1.845130344e-08 wvth0 = 2.110652363e-08 pvth0 = 6.384801114e-14
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:829:+ voff = {-1.093592126e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__voff_slope/sqrt(l*w*mult))} lvoff = 1.508876654e-08 wvoff = 5.581643455e-08 pvoff = -1.128936993e-13
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:1044:+ toxe = {3.996598e-09+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(4.148e-09*0.9635*(sky130_fd_pr__nfet_01v8__toxe_slope/sqrt(l*w*mult)))}
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:1056:+ vth0 = {5.274191454e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__vth0_slope/sqrt(l*w*mult))} lvth0 = -3.334034725e-09 wvth0 = -1.169960907e-07 pvth0 = 3.334078801e-13
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:1081:+ voff = {-1.029702180e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__voff_slope/sqrt(l*w*mult))} lvoff = 2.618209377e-09 wvoff = 1.321175511e-07 pvoff = -2.618243989e-13
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:1296:+ toxe = {3.996598e-09+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(4.148e-9*0.9635*(sky130_fd_pr__nfet_01v8__toxe_slope/sqrt(l*w*mult)))}
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:1308:+ vth0 = {5.177743821e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__vth0_slope/sqrt(l*w*mult))} lvth0 = 5.846632285e-09 wvth0 = 2.014211533e-07 pvth0 = 3.031255545e-14
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:1333:+ voff = {-1.008867668e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__voff_slope/sqrt(l*w*mult))} lvoff = 6.350117038e-10 wvoff = -5.195676899e-08 pvoff = -8.660755109e-14
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:1548:+ toxe = {3.996598e-09+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(4.148e-9*0.9635*(sky130_fd_pr__nfet_01v8__toxe_slope/sqrt(l*w*mult)))}
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:1560:+ vth0 = {5.274704895e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__vth0_slope/sqrt(l*w*mult))} lvth0 = 1.465145582e-09 wvth0 = 5.927388908e-07 pvth0 = -1.465164951e-13
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:1585:+ voff = {-9.997113297e-02+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__voff_slope/sqrt(l*w*mult))} lvoff = 2.212541797e-10 wvoff = -1.946532767e-07 pvoff = -2.212571047e-14
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:1800:+ toxe = {3.996598e-09+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(4.148e-9*0.9635*(sky130_fd_pr__nfet_01v8__toxe_slope/sqrt(l*w*mult)))}
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:1812:+ vth0 = {5.232755496e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__vth0_slope/sqrt(l*w*mult))} lvth0 = 2.312024229e-09 wvth0 = 1.012238420e-06 pvth0 = -2.312054794e-13
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:1837:+ voff = {-1.006521549e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__voff_slope/sqrt(l*w*mult))} lvoff = 3.587395722e-10 wvoff = -1.265501813e-07 pvoff = -3.587443148e-14
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:2052:+ toxe = {3.996598e-09+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(4.148e-9*0.9635*(sky130_fd_pr__nfet_01v8__toxe_slope/sqrt(l*w*mult)))}
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:2064:+ vth0 = {5.283993306e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__vth0_slope/sqrt(l*w*mult))} lvth0 = 1.636294877e-09 wvth0 = 4.998535529e-07 pvth0 = -1.636316508e-13
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:2089:+ voff = {-1.140387909e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__voff_slope/sqrt(l*w*mult))} lvoff = 2.124182510e-09 wvoff = 1.212131113e-06 pvoff = -2.124210592e-13
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:2304:+ toxe = {3.996598e-09+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(4.148e-09*0.9635*(sky130_fd_pr__nfet_01v8__toxe_slope/sqrt(l*w*mult)))}
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:2316:+ vth0 = {5.189603568e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__vth0_slope/sqrt(l*w*mult))} lvth0 = 2.338077633e-07 wvth0 = 1.637751506e-08 pvth0 = -1.636963437e-12
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:2341:+ voff = {-1.045276656e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__voff_slope/sqrt(l*w*mult))} lvoff = -7.405778430e-08 wvoff = -5.187520128e-09 pvoff = 5.185023945e-13
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:2556:+ toxe = {3.996598e-09+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(4.148e-09*0.9635*(sky130_fd_pr__nfet_01v8__toxe_slope/sqrt(l*w*mult)))}
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:2568:+ vth0 = {5.306789393e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__vth0_slope/sqrt(l*w*mult))} wvth0 = -6.566805431e-8
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:2593:+ voff = {-1.082394853e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__voff_slope/sqrt(l*w*mult))} wvoff = 2.080012457e-8
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:2808:+ toxe = {3.996598e-09+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(4.148e-09*0.9635*(sky130_fd_pr__nfet_01v8__toxe_slope/sqrt(l*w*mult)))}
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:2820:+ vth0 = {5.352278362e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__vth0_slope/sqrt(l*w*mult))} lvth0 = -3.617228753e-08 wvth0 = -1.317534910e-07 pvth0 = 5.255035288e-13
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:2845:+ voff = {-1.176657393e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__voff_slope/sqrt(l*w*mult))} lvoff = 7.495645024e-08 wvoff = 6.175965188e-08 pvoff = -3.257052870e-13
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:3060:+ toxe = {3.996598e-09+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(4.148e-09*0.9635*(sky130_fd_pr__nfet_01v8__toxe_slope/sqrt(l*w*mult)))}
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:3072:+ vth0 = {5.127732553e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__vth0_slope/sqrt(l*w*mult))} lvth0 = 5.256554436e-08 wvth0 = 4.550394741e-08 pvth0 = -1.749967743e-13
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:3097:+ voff = {-8.873006811e-02+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__voff_slope/sqrt(l*w*mult))} lvoff = -3.939387901e-08 wvoff = -8.861484891e-08 pvoff = 2.685568456e-13
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:3312:+ toxe = {3.996598e-09+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(4.148e-09*0.9635*(sky130_fd_pr__nfet_01v8__toxe_slope/sqrt(l*w*mult)))}
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:3324:+ vth0 = {5.278145439e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__vth0_slope/sqrt(l*w*mult))} lvth0 = 2.320673879e-08 wvth0 = -1.197644029e-07 pvth0 = 1.475873786e-13
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:3349:+ voff = {-1.043752606e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__voff_slope/sqrt(l*w*mult))} lvoff = -8.856325128e-09 wvoff = 1.419547061e-07 pvoff = -1.814874881e-13
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:3564:+ toxe = {3.996598e-09+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(4.148e-9*0.9635*(sky130_fd_pr__nfet_01v8__toxe_slope/sqrt(l*w*mult)))}
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:3576:+ vth0 = {5.488223603e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__vth0_slope/sqrt(l*w*mult))} lvth0 = 3.209797531e-09 wvth0 = -1.595573989e-08 pvth0 = 4.877388462e-14
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:3601:+ voff = {-1.073809901e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__voff_slope/sqrt(l*w*mult))} lvoff = -5.995228284e-09 wvoff = -6.488620375e-09 pvoff = -4.018710599e-14
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:3816:+ toxe = {3.996598e-09+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(4.148e-9*0.9635*(sky130_fd_pr__nfet_01v8__toxe_slope/sqrt(l*w*mult)))}
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:3828:+ vth0 = {5.899946501e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__vth0_slope/sqrt(l*w*mult))} lvth0 = -1.539517796e-08 wvth0 = 1.549871091e-07 pvth0 = -2.847194094e-14
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:3853:+ voff = {-1.047939655e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__voff_slope/sqrt(l*w*mult))} lvoff = -7.164255551e-09 wvoff = -1.608870732e-07 pvoff = 2.958262129e-14
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:4068:+ toxe = {3.996598e-09+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(4.148e-9*0.9635*(sky130_fd_pr__nfet_01v8__toxe_slope/sqrt(l*w*mult)))}
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:4080:+ vth0 = {5.978392309e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__vth0_slope/sqrt(l*w*mult))} lvth0 = -1.697884977e-08 wvth0 = 4.901940773e-07 pvth0 = -9.614385887e-14
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:4105:+ voff = {-7.267523460e-02+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__voff_slope/sqrt(l*w*mult))} lvoff = -1.364841706e-08 wvoff = -3.224256090e-07 pvoff = 6.219418243e-14
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:4320:+ toxe = {3.996598e-09+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(4.148e-9*0.9635*(sky130_fd_pr__nfet_01v8__toxe_slope/sqrt(l*w*mult)))}
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:4332:+ vth0 = {4.734000131e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__vth0_slope/sqrt(l*w*mult))} lvth0 = -5.676812847e-10 wvth0 = 8.849214844e-07 pvth0 = -1.482009041e-13
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:4357:+ voff = {4.173915349e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__voff_slope/sqrt(l*w*mult))} lvoff = -7.827891269e-08 wvoff = -2.508583719e-06 pvoff = 3.505069001e-13
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:4572:+ toxe = {3.996598e-09+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(4.148e-09*0.9635*(sky130_fd_pr__nfet_01v8__toxe_slope/sqrt(l*w*mult)))}
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:4584:+ vth0 = {5.235866060e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__vth0_slope/sqrt(l*w*mult))} lvth0 = -2.285945491e-07 wvth0 = -6.759846982e-09 pvth0 = 6.756594211e-13
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:4609:+ voff = {-1.061890569e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__voff_slope/sqrt(l*w*mult))} lvoff = 9.200140101e-08 wvoff = 3.121632721e-09 pvoff = -3.120130623e-13
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:4824:+ toxe = {3.996598e-09+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(4.148e-09*0.9635*(sky130_fd_pr__nfet_01v8__toxe_slope/sqrt(l*w*mult)))}
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:4836:+ vth0 = {5.121293129e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__vth0_slope/sqrt(l*w*mult))} wvth0 = 2.710460024e-8
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:4861:+ voff = {-1.015778926e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__voff_slope/sqrt(l*w*mult))} wvoff = -1.251664531e-8
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:5076:+ toxe = {3.996598e-09+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(4.148e-09*0.9635*(sky130_fd_pr__nfet_01v8__toxe_slope/sqrt(l*w*mult)))}
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:5088:+ vth0 = {4.967908026e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__vth0_slope/sqrt(l*w*mult))} lvth0 = 1.219700082e-07 wvth0 = 6.048249080e-08 pvth0 = -2.654170138e-13
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:5113:+ voff = {-1.016409368e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__voff_slope/sqrt(l*w*mult))} lvoff = 5.013198553e-10 wvoff = -1.838554534e-08 pvoff = 4.666879465e-14
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:5328:+ toxe = {3.996598e-09+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(4.148e-09*0.9635*(sky130_fd_pr__nfet_01v8__toxe_slope/sqrt(l*w*mult)))}
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:5340:+ vth0 = {5.284356918e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__vth0_slope/sqrt(l*w*mult))} lvth0 = -3.086828136e-09 wvth0 = -3.282894099e-08 pvth0 = 1.033386606e-13
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:5365:+ voff = {-1.064940750e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__voff_slope/sqrt(l*w*mult))} lvoff = 1.968034423e-08 wvoff = 2.286693560e-10 pvoff = -2.689236673e-14
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:5580:+ toxe = {3.996598e-09+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(4.148e-09*0.9635*(sky130_fd_pr__nfet_01v8__toxe_slope/sqrt(l*w*mult)))}
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:5592:+ vth0 = {5.127695596e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__vth0_slope/sqrt(l*w*mult))} lvth0 = 2.749159764e-08 wvth0 = -4.451959181e-08 pvth0 = 1.261574198e-13
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:5617:+ voff = {-8.549663687e-02+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__voff_slope/sqrt(l*w*mult))} lvoff = -2.130415623e-08 wvoff = 4.753663013e-08 pvoff = -1.192318765e-13
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:5832:+ toxe = {3.996598e-09+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(4.148e-9*0.9635*(sky130_fd_pr__nfet_01v8__toxe_slope/sqrt(l*w*mult)))}
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:5844:+ vth0 = {5.042618932e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__vth0_slope/sqrt(l*w*mult))} lvth0 = 3.558988367e-08 wvth0 = 2.069055047e-07 pvth0 = -1.131693525e-13
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:5869:+ voff = {-7.868648734e-02+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__voff_slope/sqrt(l*w*mult))} lvoff = -2.778660818e-08 wvoff = -1.499990683e-07 pvoff = 6.879860168e-14
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:6084:+ toxe = {3.996598e-09+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(4.148e-9*0.9635*(sky130_fd_pr__nfet_01v8__toxe_slope/sqrt(l*w*mult)))}
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:6096:+ vth0 = {6.336652932e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__vth0_slope/sqrt(l*w*mult))} lvth0 = -2.288505416e-08 wvth0 = -6.342383903e-08 pvth0 = 8.987341660e-15
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:6121:+ voff = {-1.400773430e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__voff_slope/sqrt(l*w*mult))} lvoff = -4.524695099e-11 wvoff = 1.557645867e-08 pvoff = -6.021833043e-15
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:6336:+ toxe = {3.996598e-09+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(4.148e-9*0.9635*(sky130_fd_pr__nfet_01v8__toxe_slope/sqrt(l*w*mult)))}
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:6348:+ vth0 = {7.892227260e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__vth0_slope/sqrt(l*w*mult))} lvth0 = -5.428914423e-08 wvth0 = -4.669764070e-07 pvth0 = 9.045693763e-14
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:6373:+ voff = {-2.298582160e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__voff_slope/sqrt(l*w*mult))} lvoff = 1.807980549e-08 wvoff = 4.636970940e-07 pvoff = -9.648887502e-14
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:6588:+ toxe = {3.996598e-09+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(4.148e-9*0.9635*(sky130_fd_pr__nfet_01v8__toxe_slope/sqrt(l*w*mult)))}
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:6600:+ vth0 = {5.453990170e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__vth0_slope/sqrt(l*w*mult))} lvth0 = -2.213342967e-08 wvth0 = 5.248312819e-07 pvth0 = -4.034365218e-14
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:6625:+ voff = {6.264320214e-02+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__voff_slope/sqrt(l*w*mult))} lvoff = -2.049557404e-08 wvoff = -7.343730776e-07 pvoff = 6.151381728e-14
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:6840:+ toxe = {3.996598e-09+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(4.148e-09*0.9635*(sky130_fd_pr__nfet_01v8__toxe_slope/sqrt(l*w*mult)))}
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:6852:+ vth0 = {5.307128993e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__vth0_slope/sqrt(l*w*mult))} lvth0 = -1.905943188e-07 wvth0 = -2.814814772e-08 pvth0 = 5.616084937e-13
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:6877:+ voff = {-1.081196041e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__voff_slope/sqrt(l*w*mult))} lvoff = 4.731257626e-08 wvoff = 8.915826504e-09 pvoff = -1.778875094e-13
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:7092:+ toxe = {3.996598e-09+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(4.148e-09*0.9635*(sky130_fd_pr__nfet_01v8__toxe_slope/sqrt(l*w*mult)))}
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:7104:+ vth0 = {0.5211602+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__vth0_slope/sqrt(l*w*mult))}
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:7129:+ voff = {-0.10574827+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__voff_slope/sqrt(l*w*mult))}
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:7344:+ toxe = {3.996598e-09+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(4.148e-09*0.9635*(sky130_fd_pr__nfet_01v8__toxe_slope/sqrt(l*w*mult)))}
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:7356:+ vth0 = {5.169427526e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__vth0_slope/sqrt(l*w*mult))} lvth0 = 3.353663987e-8
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:7381:+ voff = {-1.077667525e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__voff_slope/sqrt(l*w*mult))} lvoff = 1.605073263e-8
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:7596:+ toxe = {3.996598e-09+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(4.148e-09*0.9635*(sky130_fd_pr__nfet_01v8__toxe_slope/sqrt(l*w*mult)))}
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:7608:+ vth0 = {5.174975316e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__vth0_slope/sqrt(l*w*mult))} lvth0 = 3.134421944e-8
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:7633:+ voff = {-1.064178854e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__voff_slope/sqrt(l*w*mult))} lvoff = 1.072017044e-8
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:7848:+ toxe = {3.996598e-09+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(4.148e-09*0.9635*(sky130_fd_pr__nfet_01v8__toxe_slope/sqrt(l*w*mult)))}
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:7860:+ vth0 = {4.979362322e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__vth0_slope/sqrt(l*w*mult))} lvth0 = 6.952554794e-8
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:7885:+ voff = {-6.965807302e-02+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__voff_slope/sqrt(l*w*mult))} lvoff = -6.103060895e-8
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:8100:+ toxe = {3.996598e-09+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(4.148e-9*0.9635*(sky130_fd_pr__nfet_01v8__toxe_slope/sqrt(l*w*mult)))}
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:8112:+ vth0 = {5.732000160e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__vth0_slope/sqrt(l*w*mult))} lvth0 = -2.116617845e-9
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:8137:+ voff = {-1.286641533e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__voff_slope/sqrt(l*w*mult))} lvoff = -4.863842250e-9
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:8352:+ toxe = {3.996598e-09+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(4.148e-9*0.9635*(sky130_fd_pr__nfet_01v8__toxe_slope/sqrt(l*w*mult)))}
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:8364:+ vth0 = {6.125333257e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__vth0_slope/sqrt(l*w*mult))} lvth0 = -1.989059316e-8
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:8389:+ voff = {-1.348874771e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__voff_slope/sqrt(l*w*mult))} lvoff = -2.051640481e-9
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:8604:+ toxe = {3.996598e-09+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(4.148e-9*0.9635*(sky130_fd_pr__nfet_01v8__toxe_slope/sqrt(l*w*mult)))}
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:8616:+ vth0 = {4.171028788e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__vth0_slope/sqrt(l*w*mult))} lvth0 = 1.956310090e-08 wvth0 = 6.498750770e-07 pvth0 = -1.311974304e-13
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:8641:+ voff = {-1.714711354e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__voff_slope/sqrt(l*w*mult))} lvoff = 5.333905039e-09 wvoff = 2.884586643e-07 pvoff = -5.823432360e-14
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:8856:+ toxe = {3.996598e-09+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(4.148e-9*0.9635*(sky130_fd_pr__nfet_01v8__toxe_slope/sqrt(l*w*mult)))}
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:8868:+ vth0 = {1.375059692e+00+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__vth0_slope/sqrt(l*w*mult))} lvth0 = -1.067732016e-07 wvth0 = -1.965247555e-06 pvth0 = 2.136875574e-13
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:8893:+ voff = {-1.310263022e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__voff_slope/sqrt(l*w*mult))} wvoff = -1.531085334e-7
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:9108:+ toxe = {3.996598e-09+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(4.148e-09*0.9635*(sky130_fd_pr__nfet_01v8__toxe_slope/sqrt(l*w*mult)))}
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:9120:+ vth0 = {5.166481222e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__vth0_slope/sqrt(l*w*mult))} lvth0 = 9.002443909e-8
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:9145:+ voff = {-1.036646356e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__voff_slope/sqrt(l*w*mult))} lvoff = -4.157242546e-8
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:9360:+ toxe = {3.996598e-09+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(4.148e-09*0.9635*(sky130_fd_pr__nfet_01v8__toxe_slope/sqrt(l*w*mult)))}
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:9372:+ vth0 = {0.5211602+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__vth0_slope/sqrt(l*w*mult))}
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:9397:+ voff = {-0.10574827+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__voff_slope/sqrt(l*w*mult))}
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:9612:+ toxe = {3.996598e-09+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(4.148e-09*0.9635*(sky130_fd_pr__nfet_01v8__toxe_slope/sqrt(l*w*mult)))}
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:9624:+ vth0 = {5.169427526e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__vth0_slope/sqrt(l*w*mult))} lvth0 = 3.353663987e-8
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:9649:+ voff = {-1.077667525e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__voff_slope/sqrt(l*w*mult))} lvoff = 1.605073263e-8
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:9864:+ toxe = {3.996598e-09+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(4.148e-09*0.9635*(sky130_fd_pr__nfet_01v8__toxe_slope/sqrt(l*w*mult)))}
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:9876:+ vth0 = {5.174975316e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__vth0_slope/sqrt(l*w*mult))} lvth0 = 3.134421944e-8
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:9901:+ voff = {-1.064178854e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__voff_slope/sqrt(l*w*mult))} lvoff = 1.072017044e-8
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:10116:+ toxe = {3.996598e-09+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(4.148e-09*0.9635*(sky130_fd_pr__nfet_01v8__toxe_slope/sqrt(l*w*mult)))}
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:10128:+ vth0 = {4.979362322e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__vth0_slope/sqrt(l*w*mult))} lvth0 = 6.952554794e-8
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:10153:+ voff = {-6.965807302e-02+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__voff_slope/sqrt(l*w*mult))} lvoff = -6.103060895e-8
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:10368:+ toxe = {3.996598e-09+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(4.148e-9*0.9635*(sky130_fd_pr__nfet_01v8__toxe_slope/sqrt(l*w*mult)))}
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:10380:+ vth0 = {5.732000160e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__vth0_slope/sqrt(l*w*mult))} lvth0 = -2.116617845e-9
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:10405:+ voff = {-1.286641533e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__voff_slope/sqrt(l*w*mult))} lvoff = -4.863842250e-9
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:10620:+ toxe = {3.996598e-09+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(4.148e-9*0.9635*(sky130_fd_pr__nfet_01v8__toxe_slope/sqrt(l*w*mult)))}
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:10632:+ vth0 = {6.125333257e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__vth0_slope/sqrt(l*w*mult))} lvth0 = -1.989059316e-8
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:10657:+ voff = {-1.348874771e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__voff_slope/sqrt(l*w*mult))} lvoff = -2.051640481e-9
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:10872:+ toxe = {3.996598e-09+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(4.148e-9*0.9635*(sky130_fd_pr__nfet_01v8__toxe_slope/sqrt(l*w*mult)))}
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:10884:+ vth0 = {6.918068443e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__vth0_slope/sqrt(l*w*mult))} lvth0 = -3.589441037e-08 wvth0 = 1.001039874e-07 pvth0 = -2.020909307e-14
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:10909:+ voff = {-2.733707583e-02+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__voff_slope/sqrt(l*w*mult))} lvoff = -2.376402303e-8
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:11124:+ toxe = {3.996598e-09+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(4.148e-9*0.9635*(sky130_fd_pr__nfet_01v8__toxe_slope/sqrt(l*w*mult)))}
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:11136:+ vth0 = {4.196341252e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__vth0_slope/sqrt(l*w*mult))} wvth0 = -5.313334836e-8
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:11161:+ voff = {-0.20753+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__voff_slope/sqrt(l*w*mult))}
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:11376:+ toxe = {3.996598e-09+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(4.148e-09*0.9635*(sky130_fd_pr__nfet_01v8__toxe_slope/sqrt(l*w*mult)))}
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:11388:+ vth0 = {5.073679991e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__vth0_slope/sqrt(l*w*mult))} lvth0 = -6.644465785e-08 wvth0 = 1.560287507e-08 pvth0 = 2.630749350e-13
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:11413:+ voff = {-1.016532196e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__voff_slope/sqrt(l*w*mult))} lvoff = 2.579796916e-07 wvoff = -3.381838034e-09 pvoff = -5.036435645e-13
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:11628:+ toxe = {3.996598e-09+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(4.148e-09*0.9635*(sky130_fd_pr__nfet_01v8__toxe_slope/sqrt(l*w*mult)))}
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:11640:+ vth0 = {5.040377539e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__vth0_slope/sqrt(l*w*mult))} wvth0 = 2.878834541e-8
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:11665:+ voff = {-8.872312583e-02+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__voff_slope/sqrt(l*w*mult))} wvoff = -2.862474944e-8
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:11880:+ toxe = {3.996598e-09+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(4.148e-09*0.9635*(sky130_fd_pr__nfet_01v8__toxe_slope/sqrt(l*w*mult)))}
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:11892:+ vth0 = {4.906863338e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__vth0_slope/sqrt(l*w*mult))} lvth0 = 1.061689032e-07 wvth0 = 4.414549452e-08 pvth0 = -1.221182223e-13
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:11917:+ voff = {-8.076022498e-02+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__voff_slope/sqrt(l*w*mult))} lvoff = -6.332003996e-08 wvoff = -4.540666885e-08 pvoff = 1.334478261e-13
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:12132:+ toxe = {3.996598e-09+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(4.148e-09*0.9635*(sky130_fd_pr__nfet_01v8__toxe_slope/sqrt(l*w*mult)))}
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:12144:+ vth0 = {5.432798274e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__vth0_slope/sqrt(l*w*mult))} lvth0 = -1.016743247e-07 wvth0 = -4.334834119e-08 pvth0 = 2.236470047e-13
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:12169:+ voff = {-1.657853173e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__voff_slope/sqrt(l*w*mult))} lvoff = 2.726890067e-07 wvoff = 9.981576925e-08 pvoff = -4.404539678e-13
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:12384:+ toxe = {3.996598e-09+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(4.148e-09*0.9635*(sky130_fd_pr__nfet_01v8__toxe_slope/sqrt(l*w*mult)))}
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:12396:+ vth0 = {4.255010315e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__vth0_slope/sqrt(l*w*mult))} lvth0 = 1.282158692e-07 wvth0 = 1.217868965e-07 pvth0 = -9.867732824e-14
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:12421:+ voff = {2.621737396e-02+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__voff_slope/sqrt(l*w*mult))} lvoff = -1.020773982e-07 wvoff = -1.611974983e-07 pvoff = 6.901286980e-14
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:12636:+ toxe = {3.996598e-09+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(4.148e-9*0.9635*(sky130_fd_pr__nfet_01v8__toxe_slope/sqrt(l*w*mult)))}
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:12648:+ vth0 = {5.561446423e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__vth0_slope/sqrt(l*w*mult))} lvth0 = 3.858698228e-09 wvth0 = 2.867557498e-08 pvth0 = -1.004643037e-14
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:12673:+ voff = {-4.455146000e-02+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__voff_slope/sqrt(l*w*mult))} lvoff = -3.471388977e-08 wvoff = -1.414205217e-07 pvoff = 5.018754159e-14
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:12888:+ toxe = {3.996598e-09+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(4.148e-9*0.9635*(sky130_fd_pr__nfet_01v8__toxe_slope/sqrt(l*w*mult)))}
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:12900:+ vth0 = {5.845226536e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__vth0_slope/sqrt(l*w*mult))} lvth0 = -8.964785863e-09 wvth0 = 4.709495931e-08 pvth0 = -1.836980018e-14
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:12925:+ voff = {-1.833232664e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__voff_slope/sqrt(l*w*mult))} lvoff = 2.799445287e-08 wvoff = 8.143615818e-08 pvoff = -5.051715777e-14
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:13140:+ toxe = {3.996598e-09+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(4.148e-9*0.9635*(sky130_fd_pr__nfet_01v8__toxe_slope/sqrt(l*w*mult)))}
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:13152:+ vth0 = {8.584319749e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__vth0_slope/sqrt(l*w*mult))} lvth0 = -6.426187355e-08 wvth0 = -1.800465104e-07 pvth0 = 2.748574687e-14
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:13177:+ voff = {2.622033209e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__voff_slope/sqrt(l*w*mult))} lvoff = -6.194890009e-08 wvoff = -4.868106389e-07 pvoff = 6.420107387e-14
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:13392:+ toxe = {3.996598e-09+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(4.148e-9*0.9635*(sky130_fd_pr__nfet_01v8__toxe_slope/sqrt(l*w*mult)))}
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:13404:+ vth0 = {3.711603167e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__vth0_slope/sqrt(l*w*mult))} wvth0 = 2.836673235e-8
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:13429:+ voff = {-0.20753+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__voff_slope/sqrt(l*w*mult))}
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:13644:+ toxe = {3.996598e-09+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(4.148e-09*0.9635*(sky130_fd_pr__nfet_01v8__toxe_slope/sqrt(l*w*mult)))}
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:13656:+ vth0 = {6.590239303e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__vth0_slope/sqrt(l*w*mult))} lvth0 = -2.636885092e-06 wvth0 = -1.756840874e-07 pvth0 = 3.505228005e-12
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:13681:+ voff = {-9.216279298e-02+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__voff_slope/sqrt(l*w*mult))} lvoff = -3.841650295e-07 wvoff = -1.535232189e-08 pvoff = 3.063076993e-13
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:13896:+ toxe = {3.996598e-09+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(4.148e-09*0.9635*(sky130_fd_pr__nfet_01v8__toxe_slope/sqrt(l*w*mult)))}
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:13908:+ vth0 = {0.5268617+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__vth0_slope/sqrt(l*w*mult))}
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:13933:+ voff = {-0.11141737+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__voff_slope/sqrt(l*w*mult))}
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:14148:+ toxe = {3.996598e-09+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(4.148e-09*0.9635*(sky130_fd_pr__nfet_01v8__toxe_slope/sqrt(l*w*mult)))}
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:14160:+ vth0 = {5.256857190e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__vth0_slope/sqrt(l*w*mult))} lvth0 = 9.351260879e-9
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:14185:+ voff = {-1.167594931e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__voff_slope/sqrt(l*w*mult))} lvoff = 4.247992715e-8
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:14400:+ toxe = {3.996598e-09+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(4.148e-09*0.9635*(sky130_fd_pr__nfet_01v8__toxe_slope/sqrt(l*w*mult)))}
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:14412:+ vth0 = {5.089124405e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__vth0_slope/sqrt(l*w*mult))} lvth0 = 7.563726162e-8
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:14437:+ voff = {-8.664948260e-02+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__voff_slope/sqrt(l*w*mult))} lvoff = -7.651125123e-8
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:14652:+ toxe = {3.996598e-09+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(4.148e-09*0.9635*(sky130_fd_pr__nfet_01v8__toxe_slope/sqrt(l*w*mult)))}
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:14664:+ vth0 = {5.220559925e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__vth0_slope/sqrt(l*w*mult))} lvth0 = 4.998261211e-8
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:14689:+ voff = {-1.015830594e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__voff_slope/sqrt(l*w*mult))} lvoff = -4.736268633e-8
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:14904:+ toxe = {3.996598e-09+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(4.148e-9*0.9635*(sky130_fd_pr__nfet_01v8__toxe_slope/sqrt(l*w*mult)))}
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:14916:+ vth0 = {5.788791820e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__vth0_slope/sqrt(l*w*mult))} lvth0 = -4.106302280e-9
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:14941:+ voff = {-1.566723314e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__voff_slope/sqrt(l*w*mult))} lvoff = 5.075744911e-9
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:15156:+ toxe = {3.996598e-09+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(4.148e-9*0.9635*(sky130_fd_pr__nfet_01v8__toxe_slope/sqrt(l*w*mult)))}
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:15168:+ vth0 = {6.218604304e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__vth0_slope/sqrt(l*w*mult))} lvth0 = -2.352871179e-8
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:15193:+ voff = {-1.187591359e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__voff_slope/sqrt(l*w*mult))} lvoff = -1.205650776e-8
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:15408:+ toxe = {3.996598e-09+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(4.148e-9*0.9635*(sky130_fd_pr__nfet_01v8__toxe_slope/sqrt(l*w*mult)))}
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:15420:+ vth0 = {1.095288763e+00+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__vth0_slope/sqrt(l*w*mult))} lvth0 = -1.191048969e-07 wvth0 = -4.787991876e-07 pvth0 = 9.666045880e-14
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:15445:+ voff = {-1.237493850e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__voff_slope/sqrt(l*w*mult))} lvoff = -1.104907129e-8
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:15660:+ toxe = {3.996598e-09+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(4.148e-9*0.9635*(sky130_fd_pr__nfet_01v8__toxe_slope/sqrt(l*w*mult)))}
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:15672:+ vth0 = {-5.105009820e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__vth0_slope/sqrt(l*w*mult))} lvth0 = 9.266826037e-08 wvth0 = 1.140425525e-06 pvth0 = -1.168845155e-13
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:15697:+ voff = {-0.20753+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__voff_slope/sqrt(l*w*mult))}
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:15912:+ toxe = {3.996598e-09+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(4.148e-09*0.9635*(sky130_fd_pr__nfet_01v8__toxe_slope/sqrt(l*w*mult)))}
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:15924:+ vth0 = {4.381335181e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__vth0_slope/sqrt(l*w*mult))} lvth0 = 5.405355939e-06 wvth0 = 4.549834204e-08 pvth0 = -4.547644869e-12
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:15949:+ voff = {-1.033776573e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__voff_slope/sqrt(l*w*mult))} lvoff = -4.897824770e-07 wvoff = -4.122631500e-09 pvoff = 4.120647731e-13
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:16164:+ toxe = {3.996598e-09+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(4.148e-09*0.9635*(sky130_fd_pr__nfet_01v8__toxe_slope/sqrt(l*w*mult)))}
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:16176:+ vth0 = {8.297835176e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__vth0_slope/sqrt(l*w*mult))} lvth0 = -2.408798246e-06 wvth0 = -3.033222803e-07 pvth0 = 2.411982677e-12
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:16201:+ voff = {-1.388652938e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__voff_slope/sqrt(l*w*mult))} lvoff = 2.182626241e-07 wvoff = 2.748421000e-08 pvoff = -2.185511673e-13
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:16416:+ toxe = {3.996598e-09+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(4.148e-09*0.9635*(sky130_fd_pr__nfet_01v8__toxe_slope/sqrt(l*w*mult)))}
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:16428:+ vth0 = {5.256857190e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__vth0_slope/sqrt(l*w*mult))} lvth0 = 9.351260879e-9
+/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.ff.red:16453:+ voff = {-1.167594931e-01+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(sky130_fd_pr__nfet_01v8__voff_slope/sqrt(l*w*mult))} lvoff = 4.247992715e-8
+
+============================================================================
+18. MODEL DEPENDENCY: NSHORT_MODEL
+============================================================================
+Searching SKY130 for nshort_model...
+/foss/pdks/sky130A/libs.tech/combined/continuous/models_fet/sky130_fd_pr__nfet_01v8.spice:39:Msky130_fd_pr__nfet_01v8  d g s b nshort_model l = {l} w = {w} ad = {ad} as = {as} pd = {pd} ps = {ps} nrd = {nrd} nrs = {nrs} sa = {sa} sb = {sb} sd = {sd} nf = {nf}
+/foss/pdks/sky130A/libs.tech/combined/continuous/models_fet/sky130_fd_pr__nfet_01v8.spice:48:.model nshort_model.1 nmos
+/foss/pdks/sky130A/libs.tech/combined/continuous/models_fet/sky130_fd_pr__nfet_01v8.spice:135:.model nshort_model.2 nmos
+/foss/pdks/sky130A/libs.tech/combined/continuous/models_fet/sky130_fd_pr__nfet_01v8.spice:229:.model nshort_model.3 nmos
+/foss/pdks/sky130A/libs.tech/combined/continuous/models_fet/sky130_fd_pr__nfet_01v8.spice:323:.model nshort_model.4 nmos
+/foss/pdks/sky130A/libs.tech/combined/continuous/models_fet/sky130_fd_pr__nfet_01v8.spice:420:.model nshort_model.5 nmos
+/foss/pdks/sky130A/libs.tech/combined/continuous/models_fet/sky130_fd_pr__nfet_01v8.spice:517:.model nshort_model.6 nmos
+/foss/pdks/sky130A/libs.tech/combined/continuous/models_fet/sky130_fd_pr__nfet_01v8.spice:614:.model nshort_model.7 nmos
+/foss/pdks/sky130A/libs.tech/combined/continuous/models_fet/sky130_fd_pr__nfet_01v8.spice:712:.model nshort_model.8 nmos
+/foss/pdks/sky130A/libs.tech/combined/continuous/models_fet/sky130_fd_pr__nfet_01v8.spice:809:.model nshort_model.9 nmos
+/foss/pdks/sky130A/libs.tech/combined/continuous/models_fet/sky130_fd_pr__nfet_01v8.spice:903:.model nshort_model.10 nmos
+/foss/pdks/sky130A/libs.tech/combined/continuous/models_fet/sky130_fd_pr__nfet_01v8.spice:1012:.model nshort_model.11 nmos
+/foss/pdks/sky130A/libs.tech/combined/continuous/models_fet/sky130_fd_pr__nfet_01v8.spice:1123:.model nshort_model.12 nmos
+/foss/pdks/sky130A/libs.tech/combined/continuous/models_fet/sky130_fd_pr__nfet_01v8.spice:1241:.model nshort_model.13 nmos
+/foss/pdks/sky130A/libs.tech/combined/continuous/models_fet/sky130_fd_pr__nfet_01v8.spice:1359:.model nshort_model.14 nmos
+/foss/pdks/sky130A/libs.tech/combined/continuous/models_fet/sky130_fd_pr__nfet_01v8.spice:1475:.model nshort_model.15 nmos
+/foss/pdks/sky130A/libs.tech/combined/continuous/models_fet/sky130_fd_pr__nfet_01v8.spice:1593:.model nshort_model.16 nmos
+/foss/pdks/sky130A/libs.tech/combined/continuous/models_fet/sky130_fd_pr__nfet_01v8.spice:1711:.model nshort_model.17 nmos
+/foss/pdks/sky130A/libs.tech/combined/continuous/models_fet/sky130_fd_pr__nfet_01v8.spice:1805:.model nshort_model.18 nmos
+/foss/pdks/sky130A/libs.tech/combined/continuous/models_fet/sky130_fd_pr__nfet_01v8.spice:1915:.model nshort_model.19 nmos
+/foss/pdks/sky130A/libs.tech/combined/continuous/models_fet/sky130_fd_pr__nfet_01v8.spice:2028:.model nshort_model.20 nmos
+/foss/pdks/sky130A/libs.tech/combined/continuous/models_fet/sky130_fd_pr__nfet_01v8.spice:2147:.model nshort_model.21 nmos
+/foss/pdks/sky130A/libs.tech/combined/continuous/models_fet/sky130_fd_pr__nfet_01v8.spice:2266:.model nshort_model.22 nmos
+/foss/pdks/sky130A/libs.tech/combined/continuous/models_fet/sky130_fd_pr__nfet_01v8.spice:2381:.model nshort_model.23 nmos
+/foss/pdks/sky130A/libs.tech/combined/continuous/models_fet/sky130_fd_pr__nfet_01v8.spice:2500:.model nshort_model.24 nmos
+/foss/pdks/sky130A/libs.tech/combined/continuous/models_fet/sky130_fd_pr__nfet_01v8.spice:2618:.model nshort_model.25 nmos
+/foss/pdks/sky130A/libs.tech/combined/continuous/models_fet/sky130_fd_pr__nfet_01v8.spice:2712:.model nshort_model.26 nmos
+/foss/pdks/sky130A/libs.tech/combined/continuous/models_fet/sky130_fd_pr__nfet_01v8.spice:2822:.model nshort_model.27 nmos
+/foss/pdks/sky130A/libs.tech/combined/continuous/models_fet/sky130_fd_pr__nfet_01v8.spice:2932:.model nshort_model.28 nmos
+/foss/pdks/sky130A/libs.tech/combined/continuous/models_fet/sky130_fd_pr__nfet_01v8.spice:3050:.model nshort_model.29 nmos
+/foss/pdks/sky130A/libs.tech/combined/continuous/models_fet/sky130_fd_pr__nfet_01v8.spice:3169:.model nshort_model.30 nmos
+/foss/pdks/sky130A/libs.tech/combined/continuous/models_fet/sky130_fd_pr__nfet_01v8.spice:3287:.model nshort_model.31 nmos
+/foss/pdks/sky130A/libs.tech/combined/continuous/models_fet/sky130_fd_pr__nfet_01v8.spice:3405:.model nshort_model.32 nmos
+/foss/pdks/sky130A/libs.tech/combined/continuous/models_fet/sky130_fd_pr__nfet_01v8.spice:3508:.model nshort_model.33 nmos
+/foss/pdks/sky130A/libs.tech/combined/continuous/models_fet/sky130_fd_pr__nfet_01v8.spice:3603:.model nshort_model.34 nmos
+/foss/pdks/sky130A/libs.tech/combined/continuous/models_fet/sky130_fd_pr__nfet_01v8.spice:3714:.model nshort_model.35 nmos
+/foss/pdks/sky130A/libs.tech/combined/continuous/models_fet/sky130_fd_pr__nfet_01v8.spice:3829:.model nshort_model.36 nmos
+/foss/pdks/sky130A/libs.tech/combined/continuous/models_fet/sky130_fd_pr__nfet_01v8.spice:3950:.model nshort_model.37 nmos
+/foss/pdks/sky130A/libs.tech/combined/continuous/models_fet/sky130_fd_pr__nfet_01v8.spice:4071:.model nshort_model.38 nmos
+/foss/pdks/sky130A/libs.tech/combined/continuous/models_fet/sky130_fd_pr__nfet_01v8.spice:4190:.model nshort_model.39 nmos
+/foss/pdks/sky130A/libs.tech/combined/continuous/models_fet/sky130_fd_pr__nfet_01v8.spice:4309:.model nshort_model.40 nmos
+/foss/pdks/sky130A/libs.tech/combined/continuous/models_fet/sky130_fd_pr__nfet_01v8.spice:4428:.model nshort_model.41 nmos
+/foss/pdks/sky130A/libs.tech/combined/continuous/models_fet/sky130_fd_pr__nfet_01v8.spice:4539:.model nshort_model.42 nmos
+/foss/pdks/sky130A/libs.tech/combined/continuous/models_fet/sky130_fd_pr__nfet_01v8.spice:4650:.model nshort_model.43 nmos
+/foss/pdks/sky130A/libs.tech/combined/continuous/models_fet/sky130_fd_pr__nfet_01v8.spice:4766:.model nshort_model.44 nmos
+/foss/pdks/sky130A/libs.tech/combined/continuous/models_fet/sky130_fd_pr__nfet_01v8.spice:4886:.model nshort_model.45 nmos
+/foss/pdks/sky130A/libs.tech/combined/continuous/models_fet/sky130_fd_pr__nfet_01v8.spice:5005:.model nshort_model.46 nmos
+/foss/pdks/sky130A/libs.tech/combined/continuous/models_fet/sky130_fd_pr__nfet_01v8.spice:5123:.model nshort_model.47 nmos
+/foss/pdks/sky130A/libs.tech/combined/continuous/models_fet/sky130_fd_pr__nfet_01v8.spice:5242:.model nshort_model.48 nmos
+
+============================================================================
+19. SKY130 MODEL FILES OF INTEREST
+============================================================================
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__esd_nfet_01v8__ff.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__esd_nfet_01v8__fs.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__esd_nfet_01v8__leak.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__esd_nfet_01v8.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__esd_nfet_01v8__sf.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__esd_nfet_01v8__ss.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__esd_nfet_01v8__tt.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__esd_nfet_01v8__tt_leak.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__esd_nfet_01v8__wafer.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__esd_nfet_05v0_nvt.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__esd_nfet_g5v0d10v5__ff.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__esd_nfet_g5v0d10v5__fs.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__esd_nfet_g5v0d10v5__leak.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__esd_nfet_g5v0d10v5.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__esd_nfet_g5v0d10v5__sf.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__esd_nfet_g5v0d10v5__ss.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__esd_nfet_g5v0d10v5__tt.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__esd_nfet_g5v0d10v5__tt_leak.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__esd_nfet_g5v0d10v5__wafer.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__esd_pfet_g5v0d10v5__leak.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__esd_pfet_g5v0d10v5.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__esd_pfet_g5v0d10v5__tt.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__esd_pfet_g5v0d10v5__tt_leak.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__esd_rf_nfet_20v0_hbm_21vW60p00.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__esd_rf_nfet_20v0_hbm_32vW60p00.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__esd_rf_nfet_20v0_iec_21vW60p00.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__esd_rf_nfet_20v0_iec_32vW60p00.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ff.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__fs.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__fs.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__leak.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__leak.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8_lvt__ff.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8_lvt__ff_discrete.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8_lvt__ff.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8_lvt__fs.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8_lvt__fs_discrete.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8_lvt__fs.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8_lvt__leak.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8_lvt__leak_discrete.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8_lvt__leak.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8_lvt__mismatch.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8_lvt.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8_lvt__sf.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8_lvt__sf_discrete.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8_lvt__sf.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8_lvt__ss.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8_lvt__ss_discrete.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8_lvt__ss.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8_lvt__subvt_mismatch.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8_lvt__tt.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8_lvt__tt_correln.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8_lvt__tt_correlp.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8_lvt__tt_discrete.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8_lvt__tt_leak.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8_lvt__tt_leak_discrete.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8_lvt__tt_leak.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8_lvt__tt.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8_lvt__wafer.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__mismatch.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__sf.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__sf.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ss.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__ss.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__subvt_mismatch.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__tt.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__tt_correln.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__tt_correlp.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__tt_leak.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__tt_leak.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__tt.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__wafer.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_03v3_nvt__ff.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_03v3_nvt__fs.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_03v3_nvt__mismatch.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_03v3_nvt.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_03v3_nvt__sf.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_03v3_nvt__ss.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_03v3_nvt__tt.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_03v3_nvt__tt_correln.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_03v3_nvt__tt_correlp.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_03v3_nvt__wafer.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_05v0_nvt__ff.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_05v0_nvt__fs.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_05v0_nvt__leak.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_05v0_nvt__mismatch.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_05v0_nvt.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_05v0_nvt__sf.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_05v0_nvt__ss.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_05v0_nvt__tt.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_05v0_nvt__tt_correln.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_05v0_nvt__tt_correlp.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_05v0_nvt__tt_leak.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_05v0_nvt__wafer.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_20v0__fs_discrete.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_20v0_iso__subcircuit.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_20v0__leak_discrete.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_20v0_nvt__fs_discrete.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_20v0_nvt_iso__fs_discrete.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_20v0_nvt_iso__sf_discrete.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_20v0_nvt_iso__subcircuit.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_20v0_nvt_iso__tt_discrete.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_20v0_nvt__parasitic__diode_ps2dn.model.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_20v0_nvt__sf_discrete.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_20v0_nvt__subcircuit.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_20v0_nvt__tt_discrete.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_20v0_reverse_iso__subcircuit.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_20v0__sf_discrete.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_20v0__subcircuit.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_20v0__tt_discrete.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_20v0__wafer_discrete.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_20v0_zvt__fs_discrete.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_20v0_zvt__leak_discrete.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_20v0_zvt__parasitic__diode_ps2dn__extended_drain.model.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_20v0_zvt__sf_discrete.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_20v0_zvt__subcircuit.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_20v0_zvt__tt_discrete.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_g5v0d10v5__ff.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_g5v0d10v5__ff_discrete.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_g5v0d10v5__ff.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_g5v0d10v5__fs.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_g5v0d10v5__fs_discrete.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_g5v0d10v5__fs.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_g5v0d10v5__leak.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_g5v0d10v5__leak_discrete.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_g5v0d10v5__leak.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_g5v0d10v5__mismatch.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_g5v0d10v5.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_g5v0d10v5__sf.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_g5v0d10v5__sf_discrete.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_g5v0d10v5__sf.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_g5v0d10v5__ss.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_g5v0d10v5__ss_discrete.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_g5v0d10v5__ss.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_g5v0d10v5__tt.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_g5v0d10v5__tt_correln.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_g5v0d10v5__tt_correlp.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_g5v0d10v5__tt_discrete.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_g5v0d10v5__tt_leak.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_g5v0d10v5__tt_leak_discrete.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_g5v0d10v5__tt_leak.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_g5v0d10v5__tt.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_g5v0d10v5__wafer.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_g5v0d16v0__ff_discrete.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_g5v0d16v0__fs_discrete.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_g5v0d16v0__leak_discrete.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_g5v0d16v0.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_g5v0d16v0__sf_discrete.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_g5v0d16v0__ss_discrete.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_g5v0d16v0__subcircuit.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_g5v0d16v0__tt_discrete.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_g5v0d16v0__tt_leak_discrete.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_g5v0d16v0__wafer.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8__ff.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8__fs.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8_hvt__ff.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8_hvt__fs.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8_hvt__leak.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8_hvt__leak.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8_hvt.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8_hvt__sf.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8_hvt__ss.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8_hvt__tt.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8_hvt__tt_correln.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8_hvt__tt_correlp.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8_hvt__tt_leak.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8_hvt__tt_leak.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8_hvt__tt.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8__leak.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8__leak_discrete.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8__leak.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8_lvt__ff.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8_lvt__fs.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8_lvt__leak.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8_lvt__leak_discrete.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8_lvt__leak.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8_lvt.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8_lvt__sf.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8_lvt__ss.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8_lvt__tt.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8_lvt__tt_correln.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8_lvt__tt_correlp.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8_lvt__tt_discrete.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8_lvt__tt_leak.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8_lvt__tt_leak_discrete.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8_lvt__tt_leak.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8_lvt__tt.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8_mvt.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8__sf.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8__ss.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8__tt.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8__tt_correln.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8__tt_correlp.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8__tt_discrete.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8__tt_leak.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8__tt_leak_discrete.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8__tt_leak.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8__tt.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_20v0__leak_discrete.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_20v0__subcircuit.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_20v0__tt_discrete.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_g5v0d10v5__ff.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_g5v0d10v5__fs.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_g5v0d10v5__leak.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_g5v0d10v5__leak_discrete.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_g5v0d10v5__leak.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_g5v0d10v5.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_g5v0d10v5__sf.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_g5v0d10v5__ss.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_g5v0d10v5__tt.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_g5v0d10v5__tt_discrete.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_g5v0d10v5__tt_leak.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_g5v0d10v5__tt_leak_discrete.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_g5v0d10v5__tt_leak.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_g5v0d10v5__tt.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_g5v0d16v0__leak.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_g5v0d16v0.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_g5v0d16v0__subcircuit.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_g5v0d16v0__tt.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_g5v0d16v0__tt_leak.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_aM02W1p65L0p15.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_aM02W1p65L0p18.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_aM02W1p65L0p25.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_aM02W3p00L0p15.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_aM02W3p00L0p18.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_aM02W3p00L0p25.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p18.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p25.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_aM04W1p65L0p15.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_aM04W1p65L0p18.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_aM04W1p65L0p25.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_aM04W3p00L0p15.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_aM04W3p00L0p18.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_aM04W3p00L0p25.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_aM04W5p00L0p15.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_aM04W5p00L0p18.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_aM04W5p00L0p25.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_b__ff.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_b__fs.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_b__leak.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_b.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_b__sf.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_b__ss.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_b__tt.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_b__tt_correln.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_b__tt_correlp.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_b__tt_leak.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_b__wafer.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_hcM04W3p00L0p15.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_hcM04W5p00L0p15.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_aF02W1p65L0p15.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_aF04W0p42L0p15.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_aF04W1p65L0p15.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_aF06W0p42L0p15.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_aF06W0p84L0p15.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_aF06W1p65L0p15.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_aF06W3p00L0p15.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_aF08W0p42L0p15.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_aF08W1p65L0p15.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_aM02W1p65L0p15.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_aM02W1p65L0p18.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_aM02W1p65L0p25.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_aM02W3p00L0p15.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_aM02W3p00L0p18.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_aM02W3p00L0p25.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_aM02W5p00L0p15.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_aM02W5p00L0p18.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_aM02W5p00L0p25.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_aM04W1p65L0p15.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_aM04W1p65L0p18.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_aM04W1p65L0p25.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_aM04W3p00L0p15.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_aM04W3p00L0p18.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_aM04W3p00L0p25.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_aM04W5p00L0p15.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_aM04W5p00L0p18.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_aM04W5p00L0p25.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_b__ff.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_b__fs.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_b__leak.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_bM02W1p65L0p15.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_bM02W1p65L0p18.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_bM02W1p65L0p25.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_bM02W3p00L0p15.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_bM02W3p00L0p18.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_bM02W3p00L0p25.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_bM02W5p00L0p15.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_bM04W1p65L0p15.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_bM04W1p65L0p18.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_bM04W1p65L0p25.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_bM04W3p00L0p15.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_bM04W3p00L0p18.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_bM04W3p00L0p25.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_bM04W5p00L0p15.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_b.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_b__sf.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_b__ss.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_b__tt.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_b__tt_correln.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_b__tt_correlp.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_b__tt_leak.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_b__wafer.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_cM02W1p65L0p15.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_cM02W1p65L0p18.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_cM02W1p65L0p25.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_cM02W3p00L0p15.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_cM02W3p00L0p18.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_cM02W3p00L0p25.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_cM02W5p00L0p15.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_cM02W5p00L0p18.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_cM02W5p00L0p25.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_cM04W1p65L0p15.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_cM04W1p65L0p18.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_cM04W1p65L0p25.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_cM04W3p00L0p15.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_cM04W3p00L0p18.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_cM04W3p00L0p25.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_cM04W5p00L0p15.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_cM04W5p00L0p18.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_cM04W5p00L0p25.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt__mismatch.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_mcM04W3p00L0p15.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_mcM04W5p00L0p15.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8__mismatch.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_20v0_aup.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_20v0_noptap_iso.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_20v0_nvt_aup.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_20v0_nvt_noptap_iso.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_20v0_nvt_withptap_iso.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_20v0_nvt_withptap.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_20v0_withptap_iso.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_20v0_withptap.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_20v0_zvt_withptap.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_g5v0d10v5_aM04W3p00L0p50.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_g5v0d10v5_aM04W5p00L0p50.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_g5v0d10v5_aM04W7p00L0p50.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_g5v0d10v5_aM10W3p00L0p50.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_g5v0d10v5_aM10W5p00L0p50.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_g5v0d10v5_aM10W7p00L0p50.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_g5v0d10v5_b__ff.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_g5v0d10v5_b__fs.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_g5v0d10v5_b__leak.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_g5v0d10v5_b.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_g5v0d10v5_b__sf.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_g5v0d10v5_b__ss.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_g5v0d10v5_b__tt.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_g5v0d10v5_b__tt_correln.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_g5v0d10v5_b__tt_correlp.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_g5v0d10v5_b__tt_leak.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_g5v0d10v5_b__wafer.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_g5v0d10v5__mismatch.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_g5v0d10v5.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_pfet_01v8_b__leak.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_pfet_01v8_b.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_pfet_01v8_b__tt.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_pfet_01v8_b__tt_correln.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_pfet_01v8_b__tt_correlp.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_pfet_01v8_b__tt_leak.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_pfet_01v8_mvt__leak_discrete.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_pfet_01v8_mvt.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_pfet_01v8_mvt__tt_discrete.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_pfet_01v8_mvt__tt_leak_discrete.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_pfet_01v8.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__special_nfet_01v8__ff.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__special_nfet_01v8__ff.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__special_nfet_01v8__fs.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__special_nfet_01v8__fs.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__special_nfet_01v8__leak.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__special_nfet_01v8__leak.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__special_nfet_01v8__mismatch.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__special_nfet_01v8.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__special_nfet_01v8__sf.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__special_nfet_01v8__sf.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__special_nfet_01v8__ss.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__special_nfet_01v8__ss.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__special_nfet_01v8__subvt_mismatch.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__special_nfet_01v8__tt.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__special_nfet_01v8__tt_correln.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__special_nfet_01v8__tt_correlp.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__special_nfet_01v8__tt_leak.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__special_nfet_01v8__tt_leak.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__special_nfet_01v8__tt.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__special_nfet_01v8__wafer.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__special_nfet_latch__mismatch.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__special_nfet_latch.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__special_nfet_pass_flash__mismatch.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__special_nfet_pass_flash.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__special_nfet_pass_lvt__ff.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__special_nfet_pass_lvt__leak.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__special_nfet_pass_lvt.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__special_nfet_pass_lvt__ss.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__special_nfet_pass_lvt__tt.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__special_nfet_pass_lvt__wafer.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__special_nfet_pass__mismatch.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__special_nfet_pass.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__special_pfet_01v8_hvt__ff.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__special_pfet_01v8_hvt__fs.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__special_pfet_01v8_hvt__leak.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__special_pfet_01v8_hvt__leak.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__special_pfet_01v8_hvt.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__special_pfet_01v8_hvt__sf.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__special_pfet_01v8_hvt__ss.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__special_pfet_01v8_hvt__tt.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__special_pfet_01v8_hvt__tt_correln.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__special_pfet_01v8_hvt__tt_correlp.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__special_pfet_01v8_hvt__tt_leak.corner.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__special_pfet_01v8_hvt__tt_leak.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__special_pfet_01v8_hvt__tt.pm3.spice
+/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__special_pfet_latch.pm3.spice
+
+============================================================================
+20. PDK / EDA ENVIRONMENT VARIABLES
+============================================================================
+PDK_ROOT                            : /foss/pdks
+PDK                                 : ihp-sg13g2
+PDK_PATH                            : NOT_DEFINED
+PDK_HOME                            : NOT_DEFINED
+SKY130                              : NOT_DEFINED
+SKY130_ROOT                         : NOT_DEFINED
+SKY130A                             : NOT_DEFINED
+OPEN_PDKS_ROOT                      : NOT_DEFINED
+KLAYOUT_PATH                        : /headless/.klayout:/foss/pdks/ihp-sg13g2/libs.tech/klayout:/foss/pdks/ihp-sg13g2/libs.tech/klayout/tech
+XSCHEM_PATH                         : NOT_DEFINED
+XSCHEM_LIBRARY_PATH                 : NOT_DEFINED
+NGSPICE_INPUT_DIR                   : NOT_DEFINED
+SPICE_LIB_DIR                       : NOT_DEFINED
+TECH_ROOT                           : NOT_DEFINED
+
+============================================================================
+21. EXECUTABLE PATH
+============================================================================
+PATH:
+/headless/.local/bin
+/foss/tools/bin
+/foss/tools/sak
+/usr/local/sbin
+/usr/local/sbin
+/usr/local/bin
+/usr/sbin
+/usr/bin
+/sbin
+/bin
+/foss/tools/kactus2
+/foss/tools/klayout
+/foss/tools/osic-multitool
+
+LD_LIBRARY_PATH:
+/foss/tools/klayout
+/foss/tools/ngspice/lib
+/foss/tools/iverilog/lib
+/foss/tools/openems/lib
+/foss/tools/kactus2
+/foss/tools/gtkwave/lib/x86_64-linux-gnu
+
+============================================================================
+22. PROJECT CONFIGURATION FILES
+============================================================================
+
+============================================================================
+23. PROJECT SPICE INVENTORY
+============================================================================
+SPICE files:
+/foss/designs/lif-sky130/spice/leakage_tb.spice
+/foss/designs/lif-sky130/spice/lif_reset_first.spice
+/foss/designs/lif-sky130/spice/lif_reset_sweep.spice
+/foss/designs/lif-sky130/spice/lif_reset_tb.spice
+/foss/designs/lif-sky130/spice/lif_tb.spice
+/foss/designs/lif-sky130/spice/lif_threshold_tb.spice
+/foss/designs/lif-sky130/spice/threshold_detector.spice
+
+============================================================================
+24. XSCHEM PROJECT INVENTORY
+============================================================================
+
+============================================================================
+25. GDS / LAYOUT INVENTORY
+============================================================================
+
+============================================================================
+26. REPRODUCIBILITY ARTIFACTS
+============================================================================
+Existing reproducibility files:
+/foss/designs/lif-sky130/reproducibility/environment_20260916_215052.txt
+
+============================================================================
+27. RELEVANT SYSTEM PACKAGES
+============================================================================
+Package manager: dpkg
+ii  file                                           1:5.45-3build1                           amd64        Recognize the type of data in a file using "magic" numbers
+ii  gcc                                            4:13.2.0-7ubuntu1                        amd64        GNU C compiler
+ii  gcc-13                                         13.3.0-6ubuntu2~24.04                    amd64        GNU C compiler
+ii  gcc-13-base:amd64                              13.3.0-6ubuntu2~24.04                    amd64        GCC, the GNU Compiler Collection (base package)
+ii  gcc-13-x86-64-linux-gnu                        13.3.0-6ubuntu2~24.04                    amd64        GNU C compiler for the x86_64-linux-gnu architecture
+ii  gcc-14-base:amd64                              14.2.0-4ubuntu2~24.04                    amd64        GCC, the GNU Compiler Collection (base package)
+ii  gcc-x86-64-linux-gnu                           4:13.2.0-7ubuntu1                        amd64        GNU C compiler for the amd64 architecture
+ii  lib32gcc-s1                                    14.2.0-4ubuntu2~24.04                    amd64        GCC support library (32 bit Version)
+ii  libcc1-0:amd64                                 14.2.0-4ubuntu2~24.04                    amd64        GCC cc1 plugin for GDB
+ii  libgcc-13-dev:amd64                            13.3.0-6ubuntu2~24.04                    amd64        GCC support library (development files)
+ii  libgcc-s1:amd64                                14.2.0-4ubuntu2~24.04                    amd64        GCC support library
+ii  libgomp1:amd64                                 14.2.0-4ubuntu2~24.04                    amd64        GCC OpenMP (GOMP) support library
+ii  libmagic-mgc                                   1:5.45-3build1                           amd64        File type determination library using "magic" numbers (compiled magic file)
+ii  libmagic1t64:amd64                             1:5.45-3build1                           amd64        Recognize the type of data in a file using "magic" numbers - library
+ii  libngspice0:amd64                              42+ds-3build1                            amd64        Spice circuit simulator - library
+ii  libpython3-dev:amd64                           3.12.3-0ubuntu2.1                        amd64        header files and a static library for Python (default)
+ii  libpython3-stdlib:amd64                        3.12.3-0ubuntu2.1                        amd64        interactive high-level object-oriented language (default python3 version)
+ii  libpython3.12-dev:amd64                        3.12.3-1ubuntu0.9                        amd64        Header files and a static library for Python (v3.12)
+ii  libpython3.12-minimal:amd64                    3.12.3-1ubuntu0.9                        amd64        Minimal subset of the Python language (version 3.12)
+ii  libpython3.12-stdlib:amd64                     3.12.3-1ubuntu0.9                        amd64        Interactive high-level object-oriented language (standard library, version 3.12)
+ii  libpython3.12t64:amd64                         3.12.3-1ubuntu0.9                        amd64        Shared Python runtime library (version 3.12)
+ii  libquadmath0:amd64                             14.2.0-4ubuntu2~24.04                    amd64        GCC Quad-Precision Math Library
+ii  libvariable-magic-perl                         0.63-1build3                             amd64        module to associate user-defined magic to variables from Perl
+ii  python3                                        3.12.3-0ubuntu2.1                        amd64        interactive high-level object-oriented language (default python3 version)
+ii  python3-apport                                 2.28.1-0ubuntu3.8                        all          Python 3 library for Apport crash report handling
+ii  python3-apt                                    2.7.7ubuntu5.1                           amd64        Python 3 interface to libapt-pkg
+ii  python3-babel                                  2.10.3-3build1                           all          tools for internationalizing Python applications - Python 3.x
+ii  python3-bcrypt                                 3.2.2-1build1                            amd64        password hashing library for Python 3
+ii  python3-blinker                                1.7.0-1                                  all          Fast, simple object-to-object and broadcast signaling (Python3)
+ii  python3-cairo                                  1.25.1-2build2                           amd64        Python3 bindings for the Cairo vector graphics library
+ii  python3-certifi                                2023.11.17-1                             all          root certificates for validating SSL certs and verifying TLS hosts (python3)
+ii  python3-cffi-backend:amd64                     1.16.0-2build1                           amd64        Foreign Function Interface for Python 3 calling C code - runtime
+ii  python3-chardet                                5.2.0+dfsg-1                             all          Universal Character Encoding Detector (Python3)
+ii  python3-cryptography                           41.0.7-4ubuntu0.1                        amd64        Python library exposing cryptographic recipes and primitives (Python 3)
+rc  python3-cupshelpers                            1.5.18-1ubuntu9                          all          Python utility modules around the CUPS printing system
+ii  python3-cvxopt                                 1.3.0+dfsg-1build6                       amd64        Python3 package for convex optimization
+ii  python3-dateutil                               2.8.2-3ubuntu1                           all          powerful extensions to the standard Python 3 datetime module
+ii  python3-dbus                                   1.3.2-5build3                            amd64        simple interprocess messaging system (Python 3 interface)
+ii  python3-debian                                 0.1.49ubuntu2                            all          Python 3 modules to work with Debian-related data formats
+ii  python3-debtcollector                          2.5.0-3                                  all          collection of patterns to collect technical debt - Python 3.x
+ii  python3-deprecated                             1.2.14-1                                 all          Python decorator for old classes, functions or methods
+ii  python3-dev                                    3.12.3-0ubuntu2.1                        amd64        header files and a static library for Python (default)
+ii  python3-distlib                                0.3.8-1                                  all          low-level components of python distutils2/packaging
+ii  python3-distro                                 1.9.0-1                                  all          Linux OS platform information API
+ii  python3-dnspython                              2.6.1-1ubuntu1                           all          DNS toolkit for Python 3
+ii  python3-docutils                               0.20.1+dfsg-3                            all          text processing system for reStructuredText (implemented in Python 3)
+ii  python3-eventlet                               0.35.2-0ubuntu1.1                        all          concurrent networking library
+ii  python3-filelock                               3.13.1-1                                 all          platform independent file locking module
+ii  python3-gi                                     3.48.2-1                                 amd64        Python 3 bindings for gobject-introspection libraries
+ii  python3-gi-cairo                               3.48.2-1                                 amd64        Python 3 Cairo bindings for the GObject library
+ii  python3-gmsh                                   4.12.1+ds1-1.1build2                     all          Three-dimensional finite element mesh generator Python 3 wrapper
+ii  python3-gpg                                    1.18.0-4.1ubuntu4                        amd64        Python interface to the GPGME GnuPG encryption library (Python 3)
+ii  python3-greenlet                               3.0.3-0ubuntu5.1                         amd64        Lightweight in-process concurrent programming (python3)
+ii  python3-httplib2                               0.20.4-3                                 all          comprehensive HTTP client library written for Python3
+ii  python3-idna                                   3.6-2ubuntu0.1                           all          Python IDNA2008 (RFC 5891) handling (Python 3)
+ii  python3-importlib-metadata                     4.12.0-1                                 all          library to access the metadata for a Python package - Python 3.x
+ii  python3-iso8601                                1.0.2-1                                  all          Python module to parse ISO 8601 dates - Python 3.x
+ii  python3-jwcrypto                               1.5.4-1                                  all          Python3 implementation of JOSE Web standards
+ii  python3-jwt                                    2.7.0-1                                  all          Python 3 implementation of JSON Web Token
+ii  python3-launchpadlib                           1.11.0-6                                 all          Launchpad web services client library (Python 3)
+ii  python3-lazr.restfulclient                     0.14.6-1                                 all          client for lazr.restful-based web services (Python 3)
+ii  python3-lazr.uri                               1.0.6-3                                  all          library for parsing, manipulating, and generating URIs
+ii  python3-magic                                  2:0.4.27-3                               all          python3 interface to the libmagic file type identification library
+ii  python3-mako                                   1.3.2-1                                  all          fast and lightweight templating for the Python 3 platform
+ii  python3-markdown                               3.5.2-1                                  all          text-to-HTML conversion library/tool (Python 3 version)
+ii  python3-markupsafe                             2.1.5-1build2                            amd64        HTML/XHTML/XML string library
+ii  python3-minimal                                3.12.3-0ubuntu2.1                        amd64        minimal subset of the Python language (default python3 version)
+ii  python3-monotonic                              1.6-2                                    all          implementation of time.monotonic() - Python 3.x
+ii  python3-more-itertools                         10.2.0-1                                 all          library with routines for operating on iterables, beyond itertools (Python 3)
+ii  python3-msgpack                                1.0.3-3build2                            amd64        Python 3 implementation of MessagePack format
+ii  python3-nacl                                   1.5.0-4build1                            amd64        Python bindings to libsodium (Python 3)
+ii  python3-netaddr                                0.8.0-2ubuntu1                           all          manipulation of various common network address notations (Python 3)
+ii  python3-netifaces:amd64                        0.11.0-2build3                           amd64        portable network interface information - Python 3.x
+ii  python3-novnc                                  1:1.3.0-2                                all          HTML5 VNC client - Python 3.x libraries
+ii  python3-numpy                                  1:1.26.4+ds-6ubuntu1                     amd64        Fast array facility to the Python language (Python 3)
+ii  python3-oauthlib                               3.2.2-1                                  all          generic, spec-compliant implementation of OAuth for Python3
+ii  python3-olefile                                0.46-3                                   all          Python module to read/write MS OLE2 files
+ii  python3-oslo.config                            1:9.4.0-0ubuntu1                         all          Common code for Openstack Projects (configuration API) - Python 3.x
+ii  python3-oslo.context                           1:5.5.0-0ubuntu1                         all          WSGI context helpers for OpenStack - Python 3.x
+ii  python3-oslo.i18n                              6.3.0-0ubuntu1                           all          Oslo Internationalization Utilities - Python 3.x
+ii  python3-oslo.log                               5.5.1-0ubuntu1                           all          OpenStack logging configuration library - Python 3.x
+ii  python3-oslo.serialization                     5.4.0-0ubuntu1                           all          utilities for serialization , especially JSON - Python 3.x
+ii  python3-oslo.utils                             7.1.0-0ubuntu1                           all          set of utility functions for OpenStack - Python 3.x
+ii  python3-packaging                              24.0-1                                   all          core utilities for python3 packages
+ii  python3-paramiko                               2.12.0-2ubuntu4.1                        all          Make ssh v2 connections (Python 3)
+ii  python3-pbr                                    5.11.1-0ubuntu1                          all          inject useful and sensible default behaviors into setuptools - Python 3.x
+ii  python3-pil:amd64                              10.2.0-1ubuntu1                          amd64        Python Imaging Library (Python3)
+ii  python3-pip                                    24.0+dfsg-1ubuntu1.3                     all          Python package installer
+ii  python3-pip-whl                                24.0+dfsg-1ubuntu1.3                     all          Python package installer (pip wheel)
+ii  python3-pkg-resources                          68.1.2-2ubuntu1.2                        all          Package Discovery and Resource Access using pkg_resources
+ii  python3-platformdirs                           4.2.0-1                                  all          determining appropriate platform-specific directories (Python 3)
+ii  python3-problem-report                         2.28.1-0ubuntu3.8                        all          Python 3 library to handle problem reports
+ii  python3-pyasyncore                             1.0.2-2                                  all          asyncore for Python 3.12 onwards
+ii  python3-pygments                               2.17.2+dfsg-1                            all          syntax highlighting package written in Python 3
+ii  python3-pyinotify                              0.9.6-2ubuntu1                           all          simple Linux inotify Python bindings
+ii  python3-pyparsing                              3.1.1-1                                  all          alternative to creating and executing simple grammars - Python 3.x
+ii  python3-pyqt5                                  5.15.10+dfsg-1build6                     amd64        Python 3 bindings for Qt5
+ii  python3-pyqt5.sip                              12.13.0-1build3                          amd64        runtime module for Python extensions using SIP
+ii  python3-pyqt6                                  6.6.1-2build4                            amd64        Python bindings for Qt 6
+ii  python3-pyqt6.sip                              13.6.0-1build2                           amd64        runtime module for Python extensions using SIP
+ii  python3-requests                               2.31.0+dfsg-1ubuntu1.1                   all          elegant and simple HTTP library for Python3, built for human beings
+ii  python3-rfc3986                                2.0.0-2                                  all          validating URI references per RFC 3986 - Python 3.x
+ii  python3-roman                                  3.3-3                                    all          module for generating/analyzing Roman numerals for Python 3
+ii  python3-setuptools                             68.1.2-2ubuntu1.2                        all          Python3 Distutils Enhancements
+ii  python3-setuptools-whl                         68.1.2-2ubuntu1.2                        all          Python Distutils Enhancements (wheel package)
+ii  python3-six                                    1.16.0-4                                 all          Python 2 and 3 compatibility library
+ii  python3-stevedore                              1:5.1.0-0ubuntu1                         all          manage dynamic plugins for Python applications - python3
+ii  python3-systemd                                235-1build4                              amd64        Python 3 bindings for systemd
+ii  python3-tk:amd64                               3.12.3-0ubuntu1                          amd64        Tkinter - Writing Tk applications with Python 3.x
+ii  python3-typing-extensions                      4.10.0-1                                 all          Backported and Experimental Type Hints for Python
+ii  python3-tz                                     2024.1-2                                 all          Python3 version of the Olson timezone database
+ii  python3-unidiff                                0.7.3-1                                  all          Unified diff Python parsing/metadata extraction library (Python 3)
+ii  python3-urllib3                                2.0.7-1ubuntu0.3                         all          HTTP library with thread-safe connection pooling for Python3
+ii  python3-venv                                   3.12.3-0ubuntu2.1                        amd64        venv module for python3 (default python3 version)
+ii  python3-virtualenv                             20.25.0+ds-2                             all          Python virtual environment creator
+ii  python3-wadllib                                1.3.6-5                                  all          Python 3 library for navigating WADL files
+ii  python3-websockify                             0.10.0+dfsg1-5build2                     amd64        WebSockets support for any application/server - Python 3
+ii  python3-wheel                                  0.42.0-2                                 all          built-package format for Python
+ii  python3-wheel-whl                              0.42.0-2                                 all          built-package format for Python (wheel wheel)
+ii  python3-wrapt                                  1.15.0-2build3                           amd64        decorators, wrappers and monkey patching. - Python 3.x
+ii  python3-xdg                                    0.28-2                                   all          Python 3 library to access freedesktop.org standards
+ii  python3-yaml                                   6.0.1-2build2                            amd64        YAML parser and emitter for Python3
+ii  python3-zipp                                   1.0.0-6ubuntu0.1                         all          pathlib-compatible Zipfile object wrapper - Python 3.x
+ii  python3.12                                     3.12.3-1ubuntu0.9                        amd64        Interactive high-level object-oriented language (version 3.12)
+ii  python3.12-dev                                 3.12.3-1ubuntu0.9                        amd64        Header files and a static library for Python (v3.12)
+ii  python3.12-minimal                             3.12.3-1ubuntu0.9                        amd64        Minimal subset of the Python language (version 3.12)
+ii  python3.12-venv                                3.12.3-1ubuntu0.9                        amd64        Interactive high-level object-oriented language (pyvenv binary, version 3.12)
+
+============================================================================
+28. REPRODUCIBILITY SUMMARY
+============================================================================
+PROJECT
+Name                                : lif-sky130
+Workspace                           : /foss/designs/lif-sky130
+
+TECHNOLOGY
+Technology                          : SKY130
+PDK expected path                   : /foss/pdks/sky130A
+PDK path verification               : VERIFIED
+
+TOOLS
+ngspice                             : VERIFIED
+Xschem                              : VERIFIED
+KLayout                             : VERIFIED
+
+SOURCE CONTROL
+Git HEAD                            : NOT_AVAILABLE
+
+MODEL FLOW
+Combined SKY130 library             : VERIFIED
+sky130.lib.spice SHA256             : 48de7c677e2c6e7d09b2559279de9f818be71010a4aa933d728eb4db3b133c84
+
+PRIMARY DEVICE
+Device under investigation          : sky130_fd_pr__nfet_01v8
+
+IMPORTANT REPRODUCIBILITY NOTE
+
+This snapshot records the environment observed at capture time.
+It does not prove that a simulation result is reproducible by itself.
+
+For a complete experiment record, preserve together:
+
+  1. this environment snapshot;
+  2. the Git commit;
+  3. the exact SPICE netlist;
+  4. the exact simulation command;
+  5. the PDK installation/version;
+  6. relevant model files or immutable PDK reference;
+  7. simulation output/log;
+  8. generated plots/data;
+  9. temperature, voltage and bias conditions;
+ 10. Monte Carlo/PVT configuration when applicable.
+
+No files inside the PDK were modified by this script.
+
+============================================================================
+29. CAPTURE METADATA
+============================================================================
+Script name                 : capture_lif_sky130_environment.sh
+Project                     : lif-sky130
+Capture timestamp            : 2026-09-16T21:50:52+0200
+Output                      : /foss/designs/lif-sky130/reproducibility/environment_20260916_215052.txt
+
+END OF ENVIRONMENT SNAPSHOT

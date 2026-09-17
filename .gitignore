@@ -1,0 +1,34 @@
+# Ngspice raw databases
+*.raw
+
+# Large generated simulation datasets
+sweep_iin/
+sweep_threshold/
+sweep_vbias/
+sweep_2d/
+
+# Large generated data files
+lif_reset.dat
+lif_reset_plot.dat
+lif_reset_4nA.dat
+lif_reset_5nA.dat
+lif_reset_6nA.dat
+lif_reset_7nA.dat
+lif_reset_8nA.dat
+lif_reset_9nA.dat
+lif_reset_10nA.dat
+
+# Temporary / backup files
+*~
+*.bak
+*.tmp
+
+# MATLAB autosave
+*.asv
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# OS/editor noise
+.DS_Store

@@ -1,0 +1,88 @@
+* ============================================================
+* SKY130 LIF - Minimal Membrane Dynamics
+* ============================================================
+
+.title SKY130 LIF - Minimal Membrane Dynamics
+
+.lib /tmp/sky130_continuous_test/sky130_tt.lib.spice tt
+
+* ------------------------------------------------------------
+* Parameters
+* ------------------------------------------------------------
+
+.param VDD   = 1.8
+.param VMEM0 = 0
+
+.param CMEM  = 1p
+
+.param LLEAK = 20
+.param WLEAK = 7
+
+*Esto lo perille 
+.param VBIAS = 0.34
+
+.param IIN   = 7n
+
+*Esto es nuevo
+
+.param VTH = 0.60
+.param VRESET = 0
+
+*esto me controla cuanto dura el reset
+
+.param TRESET = 100n
+
+*
+
+.param TSTOP = 100u
+.param TSTEP = 1n
+
+* ------------------------------------------------------------
+* Supply
+* ------------------------------------------------------------
+
+Vdd vdd 0 {VDD}
+
+* ------------------------------------------------------------
+* Membrane
+* ------------------------------------------------------------
+
+Cmem vmem 0 {CMEM}
+
+.ic v(vmem)={VMEM0}
+
+* ------------------------------------------------------------
+* Input current
+* ------------------------------------------------------------
+
+Iin 0 vmem DC {IIN}
+
+* ------------------------------------------------------------
+* Leakage transistor
+* ------------------------------------------------------------
+
+Vbias bias 0 {VBIAS}
+
+Xleak vmem bias 0 0 sky130_fd_pr__nfet_01v8 l={LLEAK} w={WLEAK}
+
+* ------------------------------------------------------------
+* Transient analysis
+* ------------------------------------------------------------
+
+.control
+
+tran 1n 500u
+
+meas tran t_cross WHEN v(vmem)=0.60 RISE=1
+
+set filetype=ascii
+
+print v(vmem)
+print t_cross
+
+write lif_threshold.raw v(vmem) v(bias)
+
+.endc
+
+.end
+

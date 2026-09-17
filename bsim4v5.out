@@ -1,0 +1,9 @@
+
+Checking parameters for BSIM 4.5 model x1:nshort_model.1
+Fatal: Lpeb = -7.082e-08 is less than -Leff.
+Warning: Leff = 1.5e-11 <= 1.0e-9. Recommended Leff >= 1e-8 
+Warning: Leff for CV = 1.5e-11 <= 1.0e-9. Recommended LeffCV >=1e-8 
+Warning: Weff = 1e-11 <= 1.0e-9. Recommended Weff >=1e-7 
+Warning: Weff for CV = 1e-11 <= 1.0e-9. Recommended WeffCV >= 1e-7 
+Warning: (W0 + Weff) may be too small.
+Warning: (B1 + Weff) may be too small.

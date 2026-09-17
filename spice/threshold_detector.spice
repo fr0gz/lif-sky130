@@ -1,0 +1,54 @@
+* ============================================================
+* SKY130 LIF - Transistor Level Threshold Detector
+* ============================================================
+
+.title SKY130 LIF - Threshold Detector
+
+.lib /tmp/sky130_continuous_test/sky130_tt.lib.spice tt
+
+* ------------------------------------------------------------
+* TEMPORARY MODEL ALIAS - diagnostic only
+*
+* The SKY130 PFET subcircuit expects the model name
+* "pshort_model", while this model set defines the first
+* model bin as "pshort_model.1".
+*
+* Do NOT modify the PDK files.
+* ------------------------------------------------------------
+
+.model pshort_model pmos
++ level=54
+
+
+
+.param VDD=1.8
+
+Vdd vdd 0 {VDD}
+
+* Input sweep
+Vin vmem 0 0
+
+* ------------------------------------------------------------
+* CMOS inverter
+* ------------------------------------------------------------
+
+Xp out vmem vdd vdd sky130_fd_pr__pfet_01v8 l=10u w=20u
+
+Xn out vmem 0 0 sky130_fd_pr__nfet_01v8 l=10u w=20u
+
+* ------------------------------------------------------------
+* DC sweep
+* ------------------------------------------------------------
+
+.control
+
+dc Vin 0 1.8 1m
+
+set wr_vecnames
+set filetype=ascii
+
+print v(vmem) v(out) > threshold_detector.dat
+
+.endc
+
+.end
