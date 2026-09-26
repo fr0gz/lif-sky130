@@ -1,0 +1,181 @@
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8 and Circuit 2 cell sky130_fd_pr__pfet_01v8 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_01v8         |Circuit 2: sky130_fd_pr__pfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__nfet_01v8         |Circuit 2: sky130_fd_pr__nfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+
+Class PFET_DEVICE (0):  Merged 1 parallel devices.
+Class PFET_DEVICE (1):  Merged 1 parallel devices.
+Subcircuit summary:
+Circuit 1: PFET_DEVICE                     |Circuit 2: PFET_DEVICE                     
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (2->1)             |sky130_fd_pr__pfet_01v8 (2->1)             
+Number of devices: 1                       |Number of devices: 1                       
+Number of nets: 4                          |Number of nets: 4                          
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: PFET_DEVICE                     |Circuit 2: PFET_DEVICE                     
+-------------------------------------------|-------------------------------------------
+GATE                                       |GATE                                       
+SOURCE                                     |SOURCE                                     
+DRAIN                                      |DRAIN                                      
+BULK                                       |BULK                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes PFET_DEVICE and PFET_DEVICE are equivalent.
+
+Class NFET_DEVICE (0):  Merged 1 parallel devices.
+Class NFET_DEVICE (1):  Merged 1 parallel devices.
+Subcircuit summary:
+Circuit 1: NFET_DEVICE                     |Circuit 2: NFET_DEVICE                     
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (2->1)             |sky130_fd_pr__nfet_01v8 (2->1)             
+Number of devices: 1                       |Number of devices: 1                       
+Number of nets: 4                          |Number of nets: 4                          
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: NFET_DEVICE                     |Circuit 2: NFET_DEVICE                     
+-------------------------------------------|-------------------------------------------
+GATE                                       |GATE                                       
+SOURCE                                     |SOURCE                                     
+DRAIN                                      |DRAIN                                      
+SUBSTRATE                                  |SUBSTRATE                                  
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes NFET_DEVICE and NFET_DEVICE are equivalent.
+
+Subcircuit summary:
+Circuit 1: INTEGRATOR                      |Circuit 2: INTEGRATOR                      
+-------------------------------------------|-------------------------------------------
+PFET_DEVICE (2)                            |PFET_DEVICE (2)                            
+NFET_DEVICE (3)                            |NFET_DEVICE (3)                            
+Number of devices: 5                       |Number of devices: 5                       
+Number of nets: 18                         |Number of nets: 18                         
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Resolving symmetries by net name.
+Netlists match with 9 symmetries.
+
+Subcircuit pins:
+Circuit 1: INTEGRATOR                      |Circuit 2: INTEGRATOR                      
+-------------------------------------------|-------------------------------------------
+VSUBS                                      |VSUBS                                      
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes INTEGRATOR and INTEGRATOR are equivalent.
+
+Subcircuit summary:
+Circuit 1: THRESHOLD                       |Circuit 2: THRESHOLD                       
+-------------------------------------------|-------------------------------------------
+PFET_DEVICE (1)                            |PFET_DEVICE (1)                            
+NFET_DEVICE (2)                            |NFET_DEVICE (2)                            
+Number of devices: 3                       |Number of devices: 3                       
+Number of nets: 11                         |Number of nets: 11                         
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Resolving symmetries by net name.
+Netlists match with 4 symmetries.
+
+Subcircuit pins:
+Circuit 1: THRESHOLD                       |Circuit 2: THRESHOLD                       
+-------------------------------------------|-------------------------------------------
+VSUBS                                      |VSUBS                                      
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes THRESHOLD and THRESHOLD are equivalent.
+
+Subcircuit summary:
+Circuit 1: SYNAPSE                         |Circuit 2: SYNAPSE                         
+-------------------------------------------|-------------------------------------------
+PFET_DEVICE (1)                            |PFET_DEVICE (1)                            
+NFET_DEVICE (2)                            |NFET_DEVICE (2)                            
+Number of devices: 3                       |Number of devices: 3                       
+Number of nets: 11                         |Number of nets: 11                         
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Resolving symmetries by net name.
+Netlists match with 4 symmetries.
+
+Subcircuit pins:
+Circuit 1: SYNAPSE                         |Circuit 2: SYNAPSE                         
+-------------------------------------------|-------------------------------------------
+VSUBS                                      |VSUBS                                      
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes SYNAPSE and SYNAPSE are equivalent.
+
+Subcircuit summary:
+Circuit 1: LIF_CELL                        |Circuit 2: LIF_CELL                        
+-------------------------------------------|-------------------------------------------
+INTEGRATOR (1)                             |INTEGRATOR (1)                             
+THRESHOLD (1)                              |THRESHOLD (1)                              
+SYNAPSE (1)                                |SYNAPSE (1)                                
+Number of devices: 3                       |Number of devices: 3                       
+Number of nets: 1                          |Number of nets: 1                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: LIF_CELL                        |Circuit 2: LIF_CELL                        
+-------------------------------------------|-------------------------------------------
+VSUBS                                      |VSUBS                                      
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes LIF_CELL and LIF_CELL are equivalent.
+
+Subcircuit summary:
+Circuit 1: LIF_PHYSICAL_CELL_V2            |Circuit 2: LIF_PHYSICAL_CELL_V2            
+-------------------------------------------|-------------------------------------------
+LIF_CELL (1)                               |LIF_CELL (1)                               
+Number of devices: 1                       |Number of devices: 1                       
+Number of nets: 1                          |Number of nets: 1                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely with port errors.
+
+Subcircuit pins:
+Circuit 1: LIF_PHYSICAL_CELL_V2            |Circuit 2: LIF_PHYSICAL_CELL_V2            
+-------------------------------------------|-------------------------------------------
+VSUBS                                      |(no pin, node is VSUBS)                    
+---------------------------------------------------------------------------------------
+Error:  Connected pin (no pins) (node -2) did not get ordered!
+Ports of LIF_PHYSICAL_CELL_V2 are unordered.  Ordering will be arbitrary.
+Cell pin lists for LIF_PHYSICAL_CELL_V2 and LIF_PHYSICAL_CELL_V2 altered to match.
+Device classes LIF_PHYSICAL_CELL_V2 and LIF_PHYSICAL_CELL_V2 are equivalent.
+
+Final result: Top level cell failed pin matching.
